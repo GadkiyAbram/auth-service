@@ -1,0 +1,27 @@
+FROM gcc:latest
+
+RUN apt-get update && \
+    apt-get install -y software-properties-common && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && \
+    apt-get install -y libpq-dev libpqxx-dev postgresql-client \
+    wget \
+    gnupg \
+    cmake \
+    libssl-dev && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN wget -qO- "https://github.com/Kitware/CMake/releases/download/v3.28.2/cmake-3.28.2-linux-x86_64.tar.gz" | tar --strip-components=1 -xz -C /usr/local
+
+WORKDIR /usr/src/cplusplus
+
+COPY . .
+
+CMD ["bash", "-c", "cmake . && make && ./cplusplus"]
+
+#RUN cmake . && make
+#
+#CMD ["./cplusplus"]

@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  cpp_app:
+    build:
+      context: .
+      dockerfile: Dockerfiles/DockerfileCPP
+    depends_on:
+      - db
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_HOST=${POSTGRES_HOST}
+    volumes:
+      - .:/usr/src/cplusplus
+    working_dir: /usr/src/cplusplus
+    ports:
+      - "${CPP_APP_EXTERNAL_PORT}:${CPP_APP_INTERNAL_PORT}"
+#    command: bash -c "g++ -o cplusplus
+#      main.cpp
+#      database/DBConnection.cpp
+#      server/Server.cpp
+#      -I/usr/include/postgresql
+#      -L/usr/lib
+#      -lpq && ./cplusplus"
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "${POSTGRES_PORT}:${POSTGRES_PORT}"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+    driver: local
