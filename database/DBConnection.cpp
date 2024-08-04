@@ -38,14 +38,16 @@ void DBConnection::doExit(PGconn *connection) {
     exit(1);
 }
 
-DBConnection& DBConnection::getInstance(
-    const string& dbname,
-    const string& user,
-    const string& password,
-    const string& host,
-    const int port
-    ) {
-    static DBConnection instance(dbname, user, password, host, port);
+DBConnection& DBConnection::getInstance() {
+    const DBConfig dbConfig = getDBConfig();
+
+    static DBConnection instance(
+            dbConfig.dbName,
+            dbConfig.user,
+            dbConfig.password,
+            dbConfig.host,
+            dbConfig.port
+            );
 
     return instance;
 }

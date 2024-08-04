@@ -88,102 +88,102 @@ CMakeFiles/cplusplus.dir/database/DBConnection.cpp.o: database/DBConnection.cpp 
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/local/include/c++/14.1.0/backward/binders.h \
-  /usr/local/include/c++/14.1.0/bits/alloc_traits.h \
-  /usr/local/include/c++/14.1.0/bits/allocator.h \
-  /usr/local/include/c++/14.1.0/bits/basic_ios.h \
-  /usr/local/include/c++/14.1.0/bits/basic_ios.tcc \
-  /usr/local/include/c++/14.1.0/bits/basic_string.h \
-  /usr/local/include/c++/14.1.0/bits/basic_string.tcc \
-  /usr/local/include/c++/14.1.0/bits/char_traits.h \
-  /usr/local/include/c++/14.1.0/bits/charconv.h \
-  /usr/local/include/c++/14.1.0/bits/concept_check.h \
-  /usr/local/include/c++/14.1.0/bits/cpp_type_traits.h \
-  /usr/local/include/c++/14.1.0/bits/cxxabi_forced.h \
-  /usr/local/include/c++/14.1.0/bits/cxxabi_init_exception.h \
-  /usr/local/include/c++/14.1.0/bits/exception.h \
-  /usr/local/include/c++/14.1.0/bits/exception_defines.h \
-  /usr/local/include/c++/14.1.0/bits/exception_ptr.h \
-  /usr/local/include/c++/14.1.0/bits/functexcept.h \
-  /usr/local/include/c++/14.1.0/bits/functional_hash.h \
-  /usr/local/include/c++/14.1.0/bits/hash_bytes.h \
-  /usr/local/include/c++/14.1.0/bits/invoke.h \
-  /usr/local/include/c++/14.1.0/bits/ios_base.h \
-  /usr/local/include/c++/14.1.0/bits/istream.tcc \
-  /usr/local/include/c++/14.1.0/bits/locale_classes.h \
-  /usr/local/include/c++/14.1.0/bits/locale_classes.tcc \
-  /usr/local/include/c++/14.1.0/bits/locale_facets.h \
-  /usr/local/include/c++/14.1.0/bits/locale_facets.tcc \
-  /usr/local/include/c++/14.1.0/bits/localefwd.h \
-  /usr/local/include/c++/14.1.0/bits/memoryfwd.h \
-  /usr/local/include/c++/14.1.0/bits/move.h \
-  /usr/local/include/c++/14.1.0/bits/nested_exception.h \
-  /usr/local/include/c++/14.1.0/bits/new_allocator.h \
-  /usr/local/include/c++/14.1.0/bits/ostream.tcc \
-  /usr/local/include/c++/14.1.0/bits/ostream_insert.h \
-  /usr/local/include/c++/14.1.0/bits/postypes.h \
-  /usr/local/include/c++/14.1.0/bits/predefined_ops.h \
-  /usr/local/include/c++/14.1.0/bits/ptr_traits.h \
-  /usr/local/include/c++/14.1.0/bits/range_access.h \
-  /usr/local/include/c++/14.1.0/bits/refwrap.h \
-  /usr/local/include/c++/14.1.0/bits/requires_hosted.h \
-  /usr/local/include/c++/14.1.0/bits/sstream.tcc \
-  /usr/local/include/c++/14.1.0/bits/std_abs.h \
-  /usr/local/include/c++/14.1.0/bits/stl_algobase.h \
-  /usr/local/include/c++/14.1.0/bits/stl_construct.h \
-  /usr/local/include/c++/14.1.0/bits/stl_function.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator_base_funcs.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator_base_types.h \
-  /usr/local/include/c++/14.1.0/bits/stl_pair.h \
-  /usr/local/include/c++/14.1.0/bits/streambuf.tcc \
-  /usr/local/include/c++/14.1.0/bits/streambuf_iterator.h \
-  /usr/local/include/c++/14.1.0/bits/stringfwd.h \
-  /usr/local/include/c++/14.1.0/bits/utility.h \
-  /usr/local/include/c++/14.1.0/bits/version.h \
-  /usr/local/include/c++/14.1.0/cctype \
-  /usr/local/include/c++/14.1.0/cerrno \
-  /usr/local/include/c++/14.1.0/clocale \
-  /usr/local/include/c++/14.1.0/cstdio \
-  /usr/local/include/c++/14.1.0/cstdlib \
-  /usr/local/include/c++/14.1.0/cwchar \
-  /usr/local/include/c++/14.1.0/cwctype \
-  /usr/local/include/c++/14.1.0/debug/assertions.h \
-  /usr/local/include/c++/14.1.0/debug/debug.h \
-  /usr/local/include/c++/14.1.0/exception \
-  /usr/local/include/c++/14.1.0/ext/alloc_traits.h \
-  /usr/local/include/c++/14.1.0/ext/atomicity.h \
-  /usr/local/include/c++/14.1.0/ext/numeric_traits.h \
-  /usr/local/include/c++/14.1.0/ext/string_conversions.h \
-  /usr/local/include/c++/14.1.0/ext/type_traits.h \
-  /usr/local/include/c++/14.1.0/initializer_list \
-  /usr/local/include/c++/14.1.0/ios \
-  /usr/local/include/c++/14.1.0/iosfwd \
-  /usr/local/include/c++/14.1.0/iostream \
-  /usr/local/include/c++/14.1.0/istream \
-  /usr/local/include/c++/14.1.0/new \
-  /usr/local/include/c++/14.1.0/ostream \
-  /usr/local/include/c++/14.1.0/sstream \
-  /usr/local/include/c++/14.1.0/stdexcept \
-  /usr/local/include/c++/14.1.0/streambuf \
-  /usr/local/include/c++/14.1.0/string \
-  /usr/local/include/c++/14.1.0/system_error \
-  /usr/local/include/c++/14.1.0/type_traits \
-  /usr/local/include/c++/14.1.0/typeinfo \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/atomic_word.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++allocator.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++config.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++locale.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/cpu_defines.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/ctype_base.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/ctype_inline.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/error_constants.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/gthr-default.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/gthr.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/os_defines.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include-fixed/pthread.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include/stdarg.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include/stddef.h \
+  /usr/local/include/c++/14.2.0/backward/binders.h \
+  /usr/local/include/c++/14.2.0/bits/alloc_traits.h \
+  /usr/local/include/c++/14.2.0/bits/allocator.h \
+  /usr/local/include/c++/14.2.0/bits/basic_ios.h \
+  /usr/local/include/c++/14.2.0/bits/basic_ios.tcc \
+  /usr/local/include/c++/14.2.0/bits/basic_string.h \
+  /usr/local/include/c++/14.2.0/bits/basic_string.tcc \
+  /usr/local/include/c++/14.2.0/bits/char_traits.h \
+  /usr/local/include/c++/14.2.0/bits/charconv.h \
+  /usr/local/include/c++/14.2.0/bits/concept_check.h \
+  /usr/local/include/c++/14.2.0/bits/cpp_type_traits.h \
+  /usr/local/include/c++/14.2.0/bits/cxxabi_forced.h \
+  /usr/local/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  /usr/local/include/c++/14.2.0/bits/exception.h \
+  /usr/local/include/c++/14.2.0/bits/exception_defines.h \
+  /usr/local/include/c++/14.2.0/bits/exception_ptr.h \
+  /usr/local/include/c++/14.2.0/bits/functexcept.h \
+  /usr/local/include/c++/14.2.0/bits/functional_hash.h \
+  /usr/local/include/c++/14.2.0/bits/hash_bytes.h \
+  /usr/local/include/c++/14.2.0/bits/invoke.h \
+  /usr/local/include/c++/14.2.0/bits/ios_base.h \
+  /usr/local/include/c++/14.2.0/bits/istream.tcc \
+  /usr/local/include/c++/14.2.0/bits/locale_classes.h \
+  /usr/local/include/c++/14.2.0/bits/locale_classes.tcc \
+  /usr/local/include/c++/14.2.0/bits/locale_facets.h \
+  /usr/local/include/c++/14.2.0/bits/locale_facets.tcc \
+  /usr/local/include/c++/14.2.0/bits/localefwd.h \
+  /usr/local/include/c++/14.2.0/bits/memoryfwd.h \
+  /usr/local/include/c++/14.2.0/bits/move.h \
+  /usr/local/include/c++/14.2.0/bits/nested_exception.h \
+  /usr/local/include/c++/14.2.0/bits/new_allocator.h \
+  /usr/local/include/c++/14.2.0/bits/ostream.tcc \
+  /usr/local/include/c++/14.2.0/bits/ostream_insert.h \
+  /usr/local/include/c++/14.2.0/bits/postypes.h \
+  /usr/local/include/c++/14.2.0/bits/predefined_ops.h \
+  /usr/local/include/c++/14.2.0/bits/ptr_traits.h \
+  /usr/local/include/c++/14.2.0/bits/range_access.h \
+  /usr/local/include/c++/14.2.0/bits/refwrap.h \
+  /usr/local/include/c++/14.2.0/bits/requires_hosted.h \
+  /usr/local/include/c++/14.2.0/bits/sstream.tcc \
+  /usr/local/include/c++/14.2.0/bits/std_abs.h \
+  /usr/local/include/c++/14.2.0/bits/stl_algobase.h \
+  /usr/local/include/c++/14.2.0/bits/stl_construct.h \
+  /usr/local/include/c++/14.2.0/bits/stl_function.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  /usr/local/include/c++/14.2.0/bits/stl_pair.h \
+  /usr/local/include/c++/14.2.0/bits/streambuf.tcc \
+  /usr/local/include/c++/14.2.0/bits/streambuf_iterator.h \
+  /usr/local/include/c++/14.2.0/bits/stringfwd.h \
+  /usr/local/include/c++/14.2.0/bits/utility.h \
+  /usr/local/include/c++/14.2.0/bits/version.h \
+  /usr/local/include/c++/14.2.0/cctype \
+  /usr/local/include/c++/14.2.0/cerrno \
+  /usr/local/include/c++/14.2.0/clocale \
+  /usr/local/include/c++/14.2.0/cstdio \
+  /usr/local/include/c++/14.2.0/cstdlib \
+  /usr/local/include/c++/14.2.0/cwchar \
+  /usr/local/include/c++/14.2.0/cwctype \
+  /usr/local/include/c++/14.2.0/debug/assertions.h \
+  /usr/local/include/c++/14.2.0/debug/debug.h \
+  /usr/local/include/c++/14.2.0/exception \
+  /usr/local/include/c++/14.2.0/ext/alloc_traits.h \
+  /usr/local/include/c++/14.2.0/ext/atomicity.h \
+  /usr/local/include/c++/14.2.0/ext/numeric_traits.h \
+  /usr/local/include/c++/14.2.0/ext/string_conversions.h \
+  /usr/local/include/c++/14.2.0/ext/type_traits.h \
+  /usr/local/include/c++/14.2.0/initializer_list \
+  /usr/local/include/c++/14.2.0/ios \
+  /usr/local/include/c++/14.2.0/iosfwd \
+  /usr/local/include/c++/14.2.0/iostream \
+  /usr/local/include/c++/14.2.0/istream \
+  /usr/local/include/c++/14.2.0/new \
+  /usr/local/include/c++/14.2.0/ostream \
+  /usr/local/include/c++/14.2.0/sstream \
+  /usr/local/include/c++/14.2.0/stdexcept \
+  /usr/local/include/c++/14.2.0/streambuf \
+  /usr/local/include/c++/14.2.0/string \
+  /usr/local/include/c++/14.2.0/system_error \
+  /usr/local/include/c++/14.2.0/type_traits \
+  /usr/local/include/c++/14.2.0/typeinfo \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/atomic_word.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++allocator.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++config.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++locale.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/cpu_defines.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/ctype_base.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/ctype_inline.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/error_constants.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr-default.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/os_defines.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include-fixed/pthread.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stdarg.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stddef.h \
   constants/db/DBConstants.hpp \
   database/DBConnection.h
 
@@ -276,118 +276,251 @@ CMakeFiles/cplusplus.dir/main.cpp.o: main.cpp \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/local/include/c++/14.1.0/backward/binders.h \
-  /usr/local/include/c++/14.1.0/bits/alloc_traits.h \
-  /usr/local/include/c++/14.1.0/bits/allocator.h \
-  /usr/local/include/c++/14.1.0/bits/basic_ios.h \
-  /usr/local/include/c++/14.1.0/bits/basic_ios.tcc \
-  /usr/local/include/c++/14.1.0/bits/basic_string.h \
-  /usr/local/include/c++/14.1.0/bits/basic_string.tcc \
-  /usr/local/include/c++/14.1.0/bits/char_traits.h \
-  /usr/local/include/c++/14.1.0/bits/charconv.h \
-  /usr/local/include/c++/14.1.0/bits/chrono.h \
-  /usr/local/include/c++/14.1.0/bits/concept_check.h \
-  /usr/local/include/c++/14.1.0/bits/cpp_type_traits.h \
-  /usr/local/include/c++/14.1.0/bits/cxxabi_forced.h \
-  /usr/local/include/c++/14.1.0/bits/cxxabi_init_exception.h \
-  /usr/local/include/c++/14.1.0/bits/exception.h \
-  /usr/local/include/c++/14.1.0/bits/exception_defines.h \
-  /usr/local/include/c++/14.1.0/bits/exception_ptr.h \
-  /usr/local/include/c++/14.1.0/bits/functexcept.h \
-  /usr/local/include/c++/14.1.0/bits/functional_hash.h \
-  /usr/local/include/c++/14.1.0/bits/hash_bytes.h \
-  /usr/local/include/c++/14.1.0/bits/invoke.h \
-  /usr/local/include/c++/14.1.0/bits/ios_base.h \
-  /usr/local/include/c++/14.1.0/bits/istream.tcc \
-  /usr/local/include/c++/14.1.0/bits/locale_classes.h \
-  /usr/local/include/c++/14.1.0/bits/locale_classes.tcc \
-  /usr/local/include/c++/14.1.0/bits/locale_facets.h \
-  /usr/local/include/c++/14.1.0/bits/locale_facets.tcc \
-  /usr/local/include/c++/14.1.0/bits/localefwd.h \
-  /usr/local/include/c++/14.1.0/bits/memoryfwd.h \
-  /usr/local/include/c++/14.1.0/bits/move.h \
-  /usr/local/include/c++/14.1.0/bits/nested_exception.h \
-  /usr/local/include/c++/14.1.0/bits/new_allocator.h \
-  /usr/local/include/c++/14.1.0/bits/ostream.tcc \
-  /usr/local/include/c++/14.1.0/bits/ostream_insert.h \
-  /usr/local/include/c++/14.1.0/bits/parse_numbers.h \
-  /usr/local/include/c++/14.1.0/bits/postypes.h \
-  /usr/local/include/c++/14.1.0/bits/predefined_ops.h \
-  /usr/local/include/c++/14.1.0/bits/ptr_traits.h \
-  /usr/local/include/c++/14.1.0/bits/range_access.h \
-  /usr/local/include/c++/14.1.0/bits/refwrap.h \
-  /usr/local/include/c++/14.1.0/bits/requires_hosted.h \
-  /usr/local/include/c++/14.1.0/bits/sstream.tcc \
-  /usr/local/include/c++/14.1.0/bits/std_abs.h \
-  /usr/local/include/c++/14.1.0/bits/std_thread.h \
-  /usr/local/include/c++/14.1.0/bits/stl_algobase.h \
-  /usr/local/include/c++/14.1.0/bits/stl_construct.h \
-  /usr/local/include/c++/14.1.0/bits/stl_function.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator_base_funcs.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator_base_types.h \
-  /usr/local/include/c++/14.1.0/bits/stl_pair.h \
-  /usr/local/include/c++/14.1.0/bits/streambuf.tcc \
-  /usr/local/include/c++/14.1.0/bits/streambuf_iterator.h \
-  /usr/local/include/c++/14.1.0/bits/stringfwd.h \
-  /usr/local/include/c++/14.1.0/bits/this_thread_sleep.h \
-  /usr/local/include/c++/14.1.0/bits/unique_ptr.h \
-  /usr/local/include/c++/14.1.0/bits/uses_allocator.h \
-  /usr/local/include/c++/14.1.0/bits/utility.h \
-  /usr/local/include/c++/14.1.0/bits/version.h \
-  /usr/local/include/c++/14.1.0/cctype \
-  /usr/local/include/c++/14.1.0/cerrno \
-  /usr/local/include/c++/14.1.0/chrono \
-  /usr/local/include/c++/14.1.0/clocale \
-  /usr/local/include/c++/14.1.0/cstdint \
-  /usr/local/include/c++/14.1.0/cstdio \
-  /usr/local/include/c++/14.1.0/cstdlib \
-  /usr/local/include/c++/14.1.0/ctime \
-  /usr/local/include/c++/14.1.0/cwchar \
-  /usr/local/include/c++/14.1.0/cwctype \
-  /usr/local/include/c++/14.1.0/debug/assertions.h \
-  /usr/local/include/c++/14.1.0/debug/debug.h \
-  /usr/local/include/c++/14.1.0/exception \
-  /usr/local/include/c++/14.1.0/ext/alloc_traits.h \
-  /usr/local/include/c++/14.1.0/ext/atomicity.h \
-  /usr/local/include/c++/14.1.0/ext/numeric_traits.h \
-  /usr/local/include/c++/14.1.0/ext/string_conversions.h \
-  /usr/local/include/c++/14.1.0/ext/type_traits.h \
-  /usr/local/include/c++/14.1.0/initializer_list \
-  /usr/local/include/c++/14.1.0/ios \
-  /usr/local/include/c++/14.1.0/iosfwd \
-  /usr/local/include/c++/14.1.0/iostream \
-  /usr/local/include/c++/14.1.0/istream \
-  /usr/local/include/c++/14.1.0/limits \
-  /usr/local/include/c++/14.1.0/new \
-  /usr/local/include/c++/14.1.0/ostream \
-  /usr/local/include/c++/14.1.0/ratio \
-  /usr/local/include/c++/14.1.0/sstream \
-  /usr/local/include/c++/14.1.0/stdexcept \
-  /usr/local/include/c++/14.1.0/streambuf \
-  /usr/local/include/c++/14.1.0/string \
-  /usr/local/include/c++/14.1.0/system_error \
-  /usr/local/include/c++/14.1.0/thread \
-  /usr/local/include/c++/14.1.0/tuple \
-  /usr/local/include/c++/14.1.0/type_traits \
-  /usr/local/include/c++/14.1.0/typeinfo \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/atomic_word.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++allocator.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++config.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++locale.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/cpu_defines.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/ctype_base.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/ctype_inline.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/error_constants.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/gthr-default.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/gthr.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/os_defines.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include-fixed/pthread.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include/stdarg.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include/stddef.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include/stdint.h \
+  /usr/local/include/c++/14.2.0/backward/binders.h \
+  /usr/local/include/c++/14.2.0/bits/alloc_traits.h \
+  /usr/local/include/c++/14.2.0/bits/allocator.h \
+  /usr/local/include/c++/14.2.0/bits/basic_ios.h \
+  /usr/local/include/c++/14.2.0/bits/basic_ios.tcc \
+  /usr/local/include/c++/14.2.0/bits/basic_string.h \
+  /usr/local/include/c++/14.2.0/bits/basic_string.tcc \
+  /usr/local/include/c++/14.2.0/bits/char_traits.h \
+  /usr/local/include/c++/14.2.0/bits/charconv.h \
+  /usr/local/include/c++/14.2.0/bits/chrono.h \
+  /usr/local/include/c++/14.2.0/bits/concept_check.h \
+  /usr/local/include/c++/14.2.0/bits/cpp_type_traits.h \
+  /usr/local/include/c++/14.2.0/bits/cxxabi_forced.h \
+  /usr/local/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  /usr/local/include/c++/14.2.0/bits/exception.h \
+  /usr/local/include/c++/14.2.0/bits/exception_defines.h \
+  /usr/local/include/c++/14.2.0/bits/exception_ptr.h \
+  /usr/local/include/c++/14.2.0/bits/functexcept.h \
+  /usr/local/include/c++/14.2.0/bits/functional_hash.h \
+  /usr/local/include/c++/14.2.0/bits/hash_bytes.h \
+  /usr/local/include/c++/14.2.0/bits/invoke.h \
+  /usr/local/include/c++/14.2.0/bits/ios_base.h \
+  /usr/local/include/c++/14.2.0/bits/istream.tcc \
+  /usr/local/include/c++/14.2.0/bits/locale_classes.h \
+  /usr/local/include/c++/14.2.0/bits/locale_classes.tcc \
+  /usr/local/include/c++/14.2.0/bits/locale_facets.h \
+  /usr/local/include/c++/14.2.0/bits/locale_facets.tcc \
+  /usr/local/include/c++/14.2.0/bits/localefwd.h \
+  /usr/local/include/c++/14.2.0/bits/memoryfwd.h \
+  /usr/local/include/c++/14.2.0/bits/move.h \
+  /usr/local/include/c++/14.2.0/bits/nested_exception.h \
+  /usr/local/include/c++/14.2.0/bits/new_allocator.h \
+  /usr/local/include/c++/14.2.0/bits/ostream.tcc \
+  /usr/local/include/c++/14.2.0/bits/ostream_insert.h \
+  /usr/local/include/c++/14.2.0/bits/parse_numbers.h \
+  /usr/local/include/c++/14.2.0/bits/postypes.h \
+  /usr/local/include/c++/14.2.0/bits/predefined_ops.h \
+  /usr/local/include/c++/14.2.0/bits/ptr_traits.h \
+  /usr/local/include/c++/14.2.0/bits/range_access.h \
+  /usr/local/include/c++/14.2.0/bits/refwrap.h \
+  /usr/local/include/c++/14.2.0/bits/requires_hosted.h \
+  /usr/local/include/c++/14.2.0/bits/sstream.tcc \
+  /usr/local/include/c++/14.2.0/bits/std_abs.h \
+  /usr/local/include/c++/14.2.0/bits/std_thread.h \
+  /usr/local/include/c++/14.2.0/bits/stl_algobase.h \
+  /usr/local/include/c++/14.2.0/bits/stl_construct.h \
+  /usr/local/include/c++/14.2.0/bits/stl_function.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  /usr/local/include/c++/14.2.0/bits/stl_pair.h \
+  /usr/local/include/c++/14.2.0/bits/streambuf.tcc \
+  /usr/local/include/c++/14.2.0/bits/streambuf_iterator.h \
+  /usr/local/include/c++/14.2.0/bits/stringfwd.h \
+  /usr/local/include/c++/14.2.0/bits/this_thread_sleep.h \
+  /usr/local/include/c++/14.2.0/bits/unique_ptr.h \
+  /usr/local/include/c++/14.2.0/bits/uses_allocator.h \
+  /usr/local/include/c++/14.2.0/bits/utility.h \
+  /usr/local/include/c++/14.2.0/bits/version.h \
+  /usr/local/include/c++/14.2.0/cctype \
+  /usr/local/include/c++/14.2.0/cerrno \
+  /usr/local/include/c++/14.2.0/chrono \
+  /usr/local/include/c++/14.2.0/clocale \
+  /usr/local/include/c++/14.2.0/cstdint \
+  /usr/local/include/c++/14.2.0/cstdio \
+  /usr/local/include/c++/14.2.0/cstdlib \
+  /usr/local/include/c++/14.2.0/ctime \
+  /usr/local/include/c++/14.2.0/cwchar \
+  /usr/local/include/c++/14.2.0/cwctype \
+  /usr/local/include/c++/14.2.0/debug/assertions.h \
+  /usr/local/include/c++/14.2.0/debug/debug.h \
+  /usr/local/include/c++/14.2.0/exception \
+  /usr/local/include/c++/14.2.0/ext/alloc_traits.h \
+  /usr/local/include/c++/14.2.0/ext/atomicity.h \
+  /usr/local/include/c++/14.2.0/ext/numeric_traits.h \
+  /usr/local/include/c++/14.2.0/ext/string_conversions.h \
+  /usr/local/include/c++/14.2.0/ext/type_traits.h \
+  /usr/local/include/c++/14.2.0/initializer_list \
+  /usr/local/include/c++/14.2.0/ios \
+  /usr/local/include/c++/14.2.0/iosfwd \
+  /usr/local/include/c++/14.2.0/iostream \
+  /usr/local/include/c++/14.2.0/istream \
+  /usr/local/include/c++/14.2.0/limits \
+  /usr/local/include/c++/14.2.0/new \
+  /usr/local/include/c++/14.2.0/ostream \
+  /usr/local/include/c++/14.2.0/ratio \
+  /usr/local/include/c++/14.2.0/sstream \
+  /usr/local/include/c++/14.2.0/stdexcept \
+  /usr/local/include/c++/14.2.0/streambuf \
+  /usr/local/include/c++/14.2.0/string \
+  /usr/local/include/c++/14.2.0/system_error \
+  /usr/local/include/c++/14.2.0/thread \
+  /usr/local/include/c++/14.2.0/tuple \
+  /usr/local/include/c++/14.2.0/type_traits \
+  /usr/local/include/c++/14.2.0/typeinfo \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/atomic_word.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++allocator.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++config.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++locale.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/cpu_defines.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/ctype_base.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/ctype_inline.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/error_constants.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr-default.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/os_defines.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include-fixed/pthread.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stdarg.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stddef.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stdint.h \
   database/DBConnection.h \
   server/Server.h
+
+CMakeFiles/cplusplus.dir/models/Auth/Auth.cpp.o: models/Auth/Auth.cpp \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/linux/errno.h \
+  /usr/include/locale.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/local/include/c++/14.2.0/backward/binders.h \
+  /usr/local/include/c++/14.2.0/bits/alloc_traits.h \
+  /usr/local/include/c++/14.2.0/bits/allocator.h \
+  /usr/local/include/c++/14.2.0/bits/basic_string.h \
+  /usr/local/include/c++/14.2.0/bits/basic_string.tcc \
+  /usr/local/include/c++/14.2.0/bits/char_traits.h \
+  /usr/local/include/c++/14.2.0/bits/charconv.h \
+  /usr/local/include/c++/14.2.0/bits/concept_check.h \
+  /usr/local/include/c++/14.2.0/bits/cpp_type_traits.h \
+  /usr/local/include/c++/14.2.0/bits/cxxabi_forced.h \
+  /usr/local/include/c++/14.2.0/bits/exception.h \
+  /usr/local/include/c++/14.2.0/bits/exception_defines.h \
+  /usr/local/include/c++/14.2.0/bits/functexcept.h \
+  /usr/local/include/c++/14.2.0/bits/functional_hash.h \
+  /usr/local/include/c++/14.2.0/bits/hash_bytes.h \
+  /usr/local/include/c++/14.2.0/bits/invoke.h \
+  /usr/local/include/c++/14.2.0/bits/localefwd.h \
+  /usr/local/include/c++/14.2.0/bits/memoryfwd.h \
+  /usr/local/include/c++/14.2.0/bits/move.h \
+  /usr/local/include/c++/14.2.0/bits/new_allocator.h \
+  /usr/local/include/c++/14.2.0/bits/ostream_insert.h \
+  /usr/local/include/c++/14.2.0/bits/postypes.h \
+  /usr/local/include/c++/14.2.0/bits/predefined_ops.h \
+  /usr/local/include/c++/14.2.0/bits/ptr_traits.h \
+  /usr/local/include/c++/14.2.0/bits/range_access.h \
+  /usr/local/include/c++/14.2.0/bits/refwrap.h \
+  /usr/local/include/c++/14.2.0/bits/requires_hosted.h \
+  /usr/local/include/c++/14.2.0/bits/std_abs.h \
+  /usr/local/include/c++/14.2.0/bits/stl_algobase.h \
+  /usr/local/include/c++/14.2.0/bits/stl_construct.h \
+  /usr/local/include/c++/14.2.0/bits/stl_function.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  /usr/local/include/c++/14.2.0/bits/stl_pair.h \
+  /usr/local/include/c++/14.2.0/bits/stringfwd.h \
+  /usr/local/include/c++/14.2.0/bits/utility.h \
+  /usr/local/include/c++/14.2.0/bits/version.h \
+  /usr/local/include/c++/14.2.0/cctype \
+  /usr/local/include/c++/14.2.0/cerrno \
+  /usr/local/include/c++/14.2.0/clocale \
+  /usr/local/include/c++/14.2.0/cstdio \
+  /usr/local/include/c++/14.2.0/cstdlib \
+  /usr/local/include/c++/14.2.0/cwchar \
+  /usr/local/include/c++/14.2.0/debug/assertions.h \
+  /usr/local/include/c++/14.2.0/debug/debug.h \
+  /usr/local/include/c++/14.2.0/ext/alloc_traits.h \
+  /usr/local/include/c++/14.2.0/ext/numeric_traits.h \
+  /usr/local/include/c++/14.2.0/ext/string_conversions.h \
+  /usr/local/include/c++/14.2.0/ext/type_traits.h \
+  /usr/local/include/c++/14.2.0/initializer_list \
+  /usr/local/include/c++/14.2.0/iosfwd \
+  /usr/local/include/c++/14.2.0/new \
+  /usr/local/include/c++/14.2.0/string \
+  /usr/local/include/c++/14.2.0/type_traits \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++allocator.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++config.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++locale.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/cpu_defines.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/os_defines.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stdarg.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stddef.h \
+  models/Auth/Auth.h
 
 CMakeFiles/cplusplus.dir/models/User/User.cpp.o: models/User/User.cpp \
   /usr/include/alloca.h \
@@ -476,100 +609,100 @@ CMakeFiles/cplusplus.dir/models/User/User.cpp.o: models/User/User.cpp \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/local/include/c++/14.1.0/backward/binders.h \
-  /usr/local/include/c++/14.1.0/bits/alloc_traits.h \
-  /usr/local/include/c++/14.1.0/bits/allocator.h \
-  /usr/local/include/c++/14.1.0/bits/basic_ios.h \
-  /usr/local/include/c++/14.1.0/bits/basic_ios.tcc \
-  /usr/local/include/c++/14.1.0/bits/basic_string.h \
-  /usr/local/include/c++/14.1.0/bits/basic_string.tcc \
-  /usr/local/include/c++/14.1.0/bits/char_traits.h \
-  /usr/local/include/c++/14.1.0/bits/charconv.h \
-  /usr/local/include/c++/14.1.0/bits/concept_check.h \
-  /usr/local/include/c++/14.1.0/bits/cpp_type_traits.h \
-  /usr/local/include/c++/14.1.0/bits/cxxabi_forced.h \
-  /usr/local/include/c++/14.1.0/bits/cxxabi_init_exception.h \
-  /usr/local/include/c++/14.1.0/bits/exception.h \
-  /usr/local/include/c++/14.1.0/bits/exception_defines.h \
-  /usr/local/include/c++/14.1.0/bits/exception_ptr.h \
-  /usr/local/include/c++/14.1.0/bits/functexcept.h \
-  /usr/local/include/c++/14.1.0/bits/functional_hash.h \
-  /usr/local/include/c++/14.1.0/bits/hash_bytes.h \
-  /usr/local/include/c++/14.1.0/bits/invoke.h \
-  /usr/local/include/c++/14.1.0/bits/ios_base.h \
-  /usr/local/include/c++/14.1.0/bits/istream.tcc \
-  /usr/local/include/c++/14.1.0/bits/locale_classes.h \
-  /usr/local/include/c++/14.1.0/bits/locale_classes.tcc \
-  /usr/local/include/c++/14.1.0/bits/locale_facets.h \
-  /usr/local/include/c++/14.1.0/bits/locale_facets.tcc \
-  /usr/local/include/c++/14.1.0/bits/localefwd.h \
-  /usr/local/include/c++/14.1.0/bits/memoryfwd.h \
-  /usr/local/include/c++/14.1.0/bits/move.h \
-  /usr/local/include/c++/14.1.0/bits/nested_exception.h \
-  /usr/local/include/c++/14.1.0/bits/new_allocator.h \
-  /usr/local/include/c++/14.1.0/bits/ostream.tcc \
-  /usr/local/include/c++/14.1.0/bits/ostream_insert.h \
-  /usr/local/include/c++/14.1.0/bits/postypes.h \
-  /usr/local/include/c++/14.1.0/bits/predefined_ops.h \
-  /usr/local/include/c++/14.1.0/bits/ptr_traits.h \
-  /usr/local/include/c++/14.1.0/bits/range_access.h \
-  /usr/local/include/c++/14.1.0/bits/refwrap.h \
-  /usr/local/include/c++/14.1.0/bits/requires_hosted.h \
-  /usr/local/include/c++/14.1.0/bits/std_abs.h \
-  /usr/local/include/c++/14.1.0/bits/stl_algobase.h \
-  /usr/local/include/c++/14.1.0/bits/stl_construct.h \
-  /usr/local/include/c++/14.1.0/bits/stl_function.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator_base_funcs.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator_base_types.h \
-  /usr/local/include/c++/14.1.0/bits/stl_pair.h \
-  /usr/local/include/c++/14.1.0/bits/streambuf.tcc \
-  /usr/local/include/c++/14.1.0/bits/streambuf_iterator.h \
-  /usr/local/include/c++/14.1.0/bits/stringfwd.h \
-  /usr/local/include/c++/14.1.0/bits/utility.h \
-  /usr/local/include/c++/14.1.0/bits/version.h \
-  /usr/local/include/c++/14.1.0/cctype \
-  /usr/local/include/c++/14.1.0/cerrno \
-  /usr/local/include/c++/14.1.0/clocale \
-  /usr/local/include/c++/14.1.0/cstdio \
-  /usr/local/include/c++/14.1.0/cstdlib \
-  /usr/local/include/c++/14.1.0/cwchar \
-  /usr/local/include/c++/14.1.0/cwctype \
-  /usr/local/include/c++/14.1.0/debug/assertions.h \
-  /usr/local/include/c++/14.1.0/debug/debug.h \
-  /usr/local/include/c++/14.1.0/exception \
-  /usr/local/include/c++/14.1.0/ext/alloc_traits.h \
-  /usr/local/include/c++/14.1.0/ext/atomicity.h \
-  /usr/local/include/c++/14.1.0/ext/numeric_traits.h \
-  /usr/local/include/c++/14.1.0/ext/string_conversions.h \
-  /usr/local/include/c++/14.1.0/ext/type_traits.h \
-  /usr/local/include/c++/14.1.0/initializer_list \
-  /usr/local/include/c++/14.1.0/ios \
-  /usr/local/include/c++/14.1.0/iosfwd \
-  /usr/local/include/c++/14.1.0/iostream \
-  /usr/local/include/c++/14.1.0/istream \
-  /usr/local/include/c++/14.1.0/new \
-  /usr/local/include/c++/14.1.0/ostream \
-  /usr/local/include/c++/14.1.0/stdexcept \
-  /usr/local/include/c++/14.1.0/streambuf \
-  /usr/local/include/c++/14.1.0/string \
-  /usr/local/include/c++/14.1.0/system_error \
-  /usr/local/include/c++/14.1.0/type_traits \
-  /usr/local/include/c++/14.1.0/typeinfo \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/atomic_word.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++allocator.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++config.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++locale.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/cpu_defines.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/ctype_base.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/ctype_inline.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/error_constants.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/gthr-default.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/gthr.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/os_defines.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include-fixed/pthread.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include/stdarg.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include/stddef.h \
+  /usr/local/include/c++/14.2.0/backward/binders.h \
+  /usr/local/include/c++/14.2.0/bits/alloc_traits.h \
+  /usr/local/include/c++/14.2.0/bits/allocator.h \
+  /usr/local/include/c++/14.2.0/bits/basic_ios.h \
+  /usr/local/include/c++/14.2.0/bits/basic_ios.tcc \
+  /usr/local/include/c++/14.2.0/bits/basic_string.h \
+  /usr/local/include/c++/14.2.0/bits/basic_string.tcc \
+  /usr/local/include/c++/14.2.0/bits/char_traits.h \
+  /usr/local/include/c++/14.2.0/bits/charconv.h \
+  /usr/local/include/c++/14.2.0/bits/concept_check.h \
+  /usr/local/include/c++/14.2.0/bits/cpp_type_traits.h \
+  /usr/local/include/c++/14.2.0/bits/cxxabi_forced.h \
+  /usr/local/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  /usr/local/include/c++/14.2.0/bits/exception.h \
+  /usr/local/include/c++/14.2.0/bits/exception_defines.h \
+  /usr/local/include/c++/14.2.0/bits/exception_ptr.h \
+  /usr/local/include/c++/14.2.0/bits/functexcept.h \
+  /usr/local/include/c++/14.2.0/bits/functional_hash.h \
+  /usr/local/include/c++/14.2.0/bits/hash_bytes.h \
+  /usr/local/include/c++/14.2.0/bits/invoke.h \
+  /usr/local/include/c++/14.2.0/bits/ios_base.h \
+  /usr/local/include/c++/14.2.0/bits/istream.tcc \
+  /usr/local/include/c++/14.2.0/bits/locale_classes.h \
+  /usr/local/include/c++/14.2.0/bits/locale_classes.tcc \
+  /usr/local/include/c++/14.2.0/bits/locale_facets.h \
+  /usr/local/include/c++/14.2.0/bits/locale_facets.tcc \
+  /usr/local/include/c++/14.2.0/bits/localefwd.h \
+  /usr/local/include/c++/14.2.0/bits/memoryfwd.h \
+  /usr/local/include/c++/14.2.0/bits/move.h \
+  /usr/local/include/c++/14.2.0/bits/nested_exception.h \
+  /usr/local/include/c++/14.2.0/bits/new_allocator.h \
+  /usr/local/include/c++/14.2.0/bits/ostream.tcc \
+  /usr/local/include/c++/14.2.0/bits/ostream_insert.h \
+  /usr/local/include/c++/14.2.0/bits/postypes.h \
+  /usr/local/include/c++/14.2.0/bits/predefined_ops.h \
+  /usr/local/include/c++/14.2.0/bits/ptr_traits.h \
+  /usr/local/include/c++/14.2.0/bits/range_access.h \
+  /usr/local/include/c++/14.2.0/bits/refwrap.h \
+  /usr/local/include/c++/14.2.0/bits/requires_hosted.h \
+  /usr/local/include/c++/14.2.0/bits/std_abs.h \
+  /usr/local/include/c++/14.2.0/bits/stl_algobase.h \
+  /usr/local/include/c++/14.2.0/bits/stl_construct.h \
+  /usr/local/include/c++/14.2.0/bits/stl_function.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  /usr/local/include/c++/14.2.0/bits/stl_pair.h \
+  /usr/local/include/c++/14.2.0/bits/streambuf.tcc \
+  /usr/local/include/c++/14.2.0/bits/streambuf_iterator.h \
+  /usr/local/include/c++/14.2.0/bits/stringfwd.h \
+  /usr/local/include/c++/14.2.0/bits/utility.h \
+  /usr/local/include/c++/14.2.0/bits/version.h \
+  /usr/local/include/c++/14.2.0/cctype \
+  /usr/local/include/c++/14.2.0/cerrno \
+  /usr/local/include/c++/14.2.0/clocale \
+  /usr/local/include/c++/14.2.0/cstdio \
+  /usr/local/include/c++/14.2.0/cstdlib \
+  /usr/local/include/c++/14.2.0/cwchar \
+  /usr/local/include/c++/14.2.0/cwctype \
+  /usr/local/include/c++/14.2.0/debug/assertions.h \
+  /usr/local/include/c++/14.2.0/debug/debug.h \
+  /usr/local/include/c++/14.2.0/exception \
+  /usr/local/include/c++/14.2.0/ext/alloc_traits.h \
+  /usr/local/include/c++/14.2.0/ext/atomicity.h \
+  /usr/local/include/c++/14.2.0/ext/numeric_traits.h \
+  /usr/local/include/c++/14.2.0/ext/string_conversions.h \
+  /usr/local/include/c++/14.2.0/ext/type_traits.h \
+  /usr/local/include/c++/14.2.0/initializer_list \
+  /usr/local/include/c++/14.2.0/ios \
+  /usr/local/include/c++/14.2.0/iosfwd \
+  /usr/local/include/c++/14.2.0/iostream \
+  /usr/local/include/c++/14.2.0/istream \
+  /usr/local/include/c++/14.2.0/new \
+  /usr/local/include/c++/14.2.0/ostream \
+  /usr/local/include/c++/14.2.0/stdexcept \
+  /usr/local/include/c++/14.2.0/streambuf \
+  /usr/local/include/c++/14.2.0/string \
+  /usr/local/include/c++/14.2.0/system_error \
+  /usr/local/include/c++/14.2.0/type_traits \
+  /usr/local/include/c++/14.2.0/typeinfo \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/atomic_word.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++allocator.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++config.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++locale.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/cpu_defines.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/ctype_base.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/ctype_inline.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/error_constants.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr-default.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/os_defines.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include-fixed/pthread.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stdarg.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stddef.h \
   models/User/User.h
 
 CMakeFiles/cplusplus.dir/server/Server.cpp.o: server/Server.cpp \
@@ -689,103 +822,103 @@ CMakeFiles/cplusplus.dir/server/Server.cpp.o: server/Server.cpp \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/socket.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/local/include/c++/14.1.0/backward/binders.h \
-  /usr/local/include/c++/14.1.0/bits/alloc_traits.h \
-  /usr/local/include/c++/14.1.0/bits/allocator.h \
-  /usr/local/include/c++/14.1.0/bits/basic_ios.h \
-  /usr/local/include/c++/14.1.0/bits/basic_ios.tcc \
-  /usr/local/include/c++/14.1.0/bits/basic_string.h \
-  /usr/local/include/c++/14.1.0/bits/basic_string.tcc \
-  /usr/local/include/c++/14.1.0/bits/char_traits.h \
-  /usr/local/include/c++/14.1.0/bits/charconv.h \
-  /usr/local/include/c++/14.1.0/bits/concept_check.h \
-  /usr/local/include/c++/14.1.0/bits/cpp_type_traits.h \
-  /usr/local/include/c++/14.1.0/bits/cxxabi_forced.h \
-  /usr/local/include/c++/14.1.0/bits/cxxabi_init_exception.h \
-  /usr/local/include/c++/14.1.0/bits/exception.h \
-  /usr/local/include/c++/14.1.0/bits/exception_defines.h \
-  /usr/local/include/c++/14.1.0/bits/exception_ptr.h \
-  /usr/local/include/c++/14.1.0/bits/functexcept.h \
-  /usr/local/include/c++/14.1.0/bits/functional_hash.h \
-  /usr/local/include/c++/14.1.0/bits/hash_bytes.h \
-  /usr/local/include/c++/14.1.0/bits/invoke.h \
-  /usr/local/include/c++/14.1.0/bits/ios_base.h \
-  /usr/local/include/c++/14.1.0/bits/istream.tcc \
-  /usr/local/include/c++/14.1.0/bits/locale_classes.h \
-  /usr/local/include/c++/14.1.0/bits/locale_classes.tcc \
-  /usr/local/include/c++/14.1.0/bits/locale_facets.h \
-  /usr/local/include/c++/14.1.0/bits/locale_facets.tcc \
-  /usr/local/include/c++/14.1.0/bits/localefwd.h \
-  /usr/local/include/c++/14.1.0/bits/memoryfwd.h \
-  /usr/local/include/c++/14.1.0/bits/move.h \
-  /usr/local/include/c++/14.1.0/bits/nested_exception.h \
-  /usr/local/include/c++/14.1.0/bits/new_allocator.h \
-  /usr/local/include/c++/14.1.0/bits/ostream.tcc \
-  /usr/local/include/c++/14.1.0/bits/ostream_insert.h \
-  /usr/local/include/c++/14.1.0/bits/postypes.h \
-  /usr/local/include/c++/14.1.0/bits/predefined_ops.h \
-  /usr/local/include/c++/14.1.0/bits/ptr_traits.h \
-  /usr/local/include/c++/14.1.0/bits/range_access.h \
-  /usr/local/include/c++/14.1.0/bits/refwrap.h \
-  /usr/local/include/c++/14.1.0/bits/requires_hosted.h \
-  /usr/local/include/c++/14.1.0/bits/sstream.tcc \
-  /usr/local/include/c++/14.1.0/bits/std_abs.h \
-  /usr/local/include/c++/14.1.0/bits/stl_algobase.h \
-  /usr/local/include/c++/14.1.0/bits/stl_construct.h \
-  /usr/local/include/c++/14.1.0/bits/stl_function.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator_base_funcs.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator_base_types.h \
-  /usr/local/include/c++/14.1.0/bits/stl_pair.h \
-  /usr/local/include/c++/14.1.0/bits/streambuf.tcc \
-  /usr/local/include/c++/14.1.0/bits/streambuf_iterator.h \
-  /usr/local/include/c++/14.1.0/bits/stringfwd.h \
-  /usr/local/include/c++/14.1.0/bits/utility.h \
-  /usr/local/include/c++/14.1.0/bits/version.h \
-  /usr/local/include/c++/14.1.0/cctype \
-  /usr/local/include/c++/14.1.0/cerrno \
-  /usr/local/include/c++/14.1.0/clocale \
-  /usr/local/include/c++/14.1.0/cstdio \
-  /usr/local/include/c++/14.1.0/cstdlib \
-  /usr/local/include/c++/14.1.0/cstring \
-  /usr/local/include/c++/14.1.0/cwchar \
-  /usr/local/include/c++/14.1.0/cwctype \
-  /usr/local/include/c++/14.1.0/debug/assertions.h \
-  /usr/local/include/c++/14.1.0/debug/debug.h \
-  /usr/local/include/c++/14.1.0/exception \
-  /usr/local/include/c++/14.1.0/ext/alloc_traits.h \
-  /usr/local/include/c++/14.1.0/ext/atomicity.h \
-  /usr/local/include/c++/14.1.0/ext/numeric_traits.h \
-  /usr/local/include/c++/14.1.0/ext/string_conversions.h \
-  /usr/local/include/c++/14.1.0/ext/type_traits.h \
-  /usr/local/include/c++/14.1.0/initializer_list \
-  /usr/local/include/c++/14.1.0/ios \
-  /usr/local/include/c++/14.1.0/iosfwd \
-  /usr/local/include/c++/14.1.0/iostream \
-  /usr/local/include/c++/14.1.0/istream \
-  /usr/local/include/c++/14.1.0/new \
-  /usr/local/include/c++/14.1.0/ostream \
-  /usr/local/include/c++/14.1.0/sstream \
-  /usr/local/include/c++/14.1.0/stdexcept \
-  /usr/local/include/c++/14.1.0/streambuf \
-  /usr/local/include/c++/14.1.0/string \
-  /usr/local/include/c++/14.1.0/system_error \
-  /usr/local/include/c++/14.1.0/type_traits \
-  /usr/local/include/c++/14.1.0/typeinfo \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/atomic_word.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++allocator.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++config.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++locale.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/cpu_defines.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/ctype_base.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/ctype_inline.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/error_constants.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/gthr-default.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/gthr.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/os_defines.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include-fixed/pthread.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include/stdarg.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include/stddef.h \
+  /usr/local/include/c++/14.2.0/backward/binders.h \
+  /usr/local/include/c++/14.2.0/bits/alloc_traits.h \
+  /usr/local/include/c++/14.2.0/bits/allocator.h \
+  /usr/local/include/c++/14.2.0/bits/basic_ios.h \
+  /usr/local/include/c++/14.2.0/bits/basic_ios.tcc \
+  /usr/local/include/c++/14.2.0/bits/basic_string.h \
+  /usr/local/include/c++/14.2.0/bits/basic_string.tcc \
+  /usr/local/include/c++/14.2.0/bits/char_traits.h \
+  /usr/local/include/c++/14.2.0/bits/charconv.h \
+  /usr/local/include/c++/14.2.0/bits/concept_check.h \
+  /usr/local/include/c++/14.2.0/bits/cpp_type_traits.h \
+  /usr/local/include/c++/14.2.0/bits/cxxabi_forced.h \
+  /usr/local/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  /usr/local/include/c++/14.2.0/bits/exception.h \
+  /usr/local/include/c++/14.2.0/bits/exception_defines.h \
+  /usr/local/include/c++/14.2.0/bits/exception_ptr.h \
+  /usr/local/include/c++/14.2.0/bits/functexcept.h \
+  /usr/local/include/c++/14.2.0/bits/functional_hash.h \
+  /usr/local/include/c++/14.2.0/bits/hash_bytes.h \
+  /usr/local/include/c++/14.2.0/bits/invoke.h \
+  /usr/local/include/c++/14.2.0/bits/ios_base.h \
+  /usr/local/include/c++/14.2.0/bits/istream.tcc \
+  /usr/local/include/c++/14.2.0/bits/locale_classes.h \
+  /usr/local/include/c++/14.2.0/bits/locale_classes.tcc \
+  /usr/local/include/c++/14.2.0/bits/locale_facets.h \
+  /usr/local/include/c++/14.2.0/bits/locale_facets.tcc \
+  /usr/local/include/c++/14.2.0/bits/localefwd.h \
+  /usr/local/include/c++/14.2.0/bits/memoryfwd.h \
+  /usr/local/include/c++/14.2.0/bits/move.h \
+  /usr/local/include/c++/14.2.0/bits/nested_exception.h \
+  /usr/local/include/c++/14.2.0/bits/new_allocator.h \
+  /usr/local/include/c++/14.2.0/bits/ostream.tcc \
+  /usr/local/include/c++/14.2.0/bits/ostream_insert.h \
+  /usr/local/include/c++/14.2.0/bits/postypes.h \
+  /usr/local/include/c++/14.2.0/bits/predefined_ops.h \
+  /usr/local/include/c++/14.2.0/bits/ptr_traits.h \
+  /usr/local/include/c++/14.2.0/bits/range_access.h \
+  /usr/local/include/c++/14.2.0/bits/refwrap.h \
+  /usr/local/include/c++/14.2.0/bits/requires_hosted.h \
+  /usr/local/include/c++/14.2.0/bits/sstream.tcc \
+  /usr/local/include/c++/14.2.0/bits/std_abs.h \
+  /usr/local/include/c++/14.2.0/bits/stl_algobase.h \
+  /usr/local/include/c++/14.2.0/bits/stl_construct.h \
+  /usr/local/include/c++/14.2.0/bits/stl_function.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  /usr/local/include/c++/14.2.0/bits/stl_pair.h \
+  /usr/local/include/c++/14.2.0/bits/streambuf.tcc \
+  /usr/local/include/c++/14.2.0/bits/streambuf_iterator.h \
+  /usr/local/include/c++/14.2.0/bits/stringfwd.h \
+  /usr/local/include/c++/14.2.0/bits/utility.h \
+  /usr/local/include/c++/14.2.0/bits/version.h \
+  /usr/local/include/c++/14.2.0/cctype \
+  /usr/local/include/c++/14.2.0/cerrno \
+  /usr/local/include/c++/14.2.0/clocale \
+  /usr/local/include/c++/14.2.0/cstdio \
+  /usr/local/include/c++/14.2.0/cstdlib \
+  /usr/local/include/c++/14.2.0/cstring \
+  /usr/local/include/c++/14.2.0/cwchar \
+  /usr/local/include/c++/14.2.0/cwctype \
+  /usr/local/include/c++/14.2.0/debug/assertions.h \
+  /usr/local/include/c++/14.2.0/debug/debug.h \
+  /usr/local/include/c++/14.2.0/exception \
+  /usr/local/include/c++/14.2.0/ext/alloc_traits.h \
+  /usr/local/include/c++/14.2.0/ext/atomicity.h \
+  /usr/local/include/c++/14.2.0/ext/numeric_traits.h \
+  /usr/local/include/c++/14.2.0/ext/string_conversions.h \
+  /usr/local/include/c++/14.2.0/ext/type_traits.h \
+  /usr/local/include/c++/14.2.0/initializer_list \
+  /usr/local/include/c++/14.2.0/ios \
+  /usr/local/include/c++/14.2.0/iosfwd \
+  /usr/local/include/c++/14.2.0/iostream \
+  /usr/local/include/c++/14.2.0/istream \
+  /usr/local/include/c++/14.2.0/new \
+  /usr/local/include/c++/14.2.0/ostream \
+  /usr/local/include/c++/14.2.0/sstream \
+  /usr/local/include/c++/14.2.0/stdexcept \
+  /usr/local/include/c++/14.2.0/streambuf \
+  /usr/local/include/c++/14.2.0/string \
+  /usr/local/include/c++/14.2.0/system_error \
+  /usr/local/include/c++/14.2.0/type_traits \
+  /usr/local/include/c++/14.2.0/typeinfo \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/atomic_word.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++allocator.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++config.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++locale.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/cpu_defines.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/ctype_base.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/ctype_inline.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/error_constants.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr-default.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/os_defines.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include-fixed/pthread.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stdarg.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stddef.h \
   constants/http/HttpConstants.hpp \
   database/DBConnection.h \
   server/Server.h
@@ -874,104 +1007,108 @@ CMakeFiles/cplusplus.dir/topics/pointers/Pointer.cpp.o: topics/pointers/Pointer.
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/local/include/c++/14.1.0/backward/binders.h \
-  /usr/local/include/c++/14.1.0/bits/alloc_traits.h \
-  /usr/local/include/c++/14.1.0/bits/allocator.h \
-  /usr/local/include/c++/14.1.0/bits/basic_ios.h \
-  /usr/local/include/c++/14.1.0/bits/basic_ios.tcc \
-  /usr/local/include/c++/14.1.0/bits/basic_string.h \
-  /usr/local/include/c++/14.1.0/bits/basic_string.tcc \
-  /usr/local/include/c++/14.1.0/bits/char_traits.h \
-  /usr/local/include/c++/14.1.0/bits/charconv.h \
-  /usr/local/include/c++/14.1.0/bits/concept_check.h \
-  /usr/local/include/c++/14.1.0/bits/cpp_type_traits.h \
-  /usr/local/include/c++/14.1.0/bits/cxxabi_forced.h \
-  /usr/local/include/c++/14.1.0/bits/cxxabi_init_exception.h \
-  /usr/local/include/c++/14.1.0/bits/exception.h \
-  /usr/local/include/c++/14.1.0/bits/exception_defines.h \
-  /usr/local/include/c++/14.1.0/bits/exception_ptr.h \
-  /usr/local/include/c++/14.1.0/bits/functexcept.h \
-  /usr/local/include/c++/14.1.0/bits/functional_hash.h \
-  /usr/local/include/c++/14.1.0/bits/hash_bytes.h \
-  /usr/local/include/c++/14.1.0/bits/invoke.h \
-  /usr/local/include/c++/14.1.0/bits/ios_base.h \
-  /usr/local/include/c++/14.1.0/bits/istream.tcc \
-  /usr/local/include/c++/14.1.0/bits/locale_classes.h \
-  /usr/local/include/c++/14.1.0/bits/locale_classes.tcc \
-  /usr/local/include/c++/14.1.0/bits/locale_facets.h \
-  /usr/local/include/c++/14.1.0/bits/locale_facets.tcc \
-  /usr/local/include/c++/14.1.0/bits/localefwd.h \
-  /usr/local/include/c++/14.1.0/bits/memoryfwd.h \
-  /usr/local/include/c++/14.1.0/bits/move.h \
-  /usr/local/include/c++/14.1.0/bits/nested_exception.h \
-  /usr/local/include/c++/14.1.0/bits/new_allocator.h \
-  /usr/local/include/c++/14.1.0/bits/ostream.tcc \
-  /usr/local/include/c++/14.1.0/bits/ostream_insert.h \
-  /usr/local/include/c++/14.1.0/bits/postypes.h \
-  /usr/local/include/c++/14.1.0/bits/predefined_ops.h \
-  /usr/local/include/c++/14.1.0/bits/ptr_traits.h \
-  /usr/local/include/c++/14.1.0/bits/range_access.h \
-  /usr/local/include/c++/14.1.0/bits/refwrap.h \
-  /usr/local/include/c++/14.1.0/bits/requires_hosted.h \
-  /usr/local/include/c++/14.1.0/bits/std_abs.h \
-  /usr/local/include/c++/14.1.0/bits/stl_algobase.h \
-  /usr/local/include/c++/14.1.0/bits/stl_construct.h \
-  /usr/local/include/c++/14.1.0/bits/stl_function.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator_base_funcs.h \
-  /usr/local/include/c++/14.1.0/bits/stl_iterator_base_types.h \
-  /usr/local/include/c++/14.1.0/bits/stl_pair.h \
-  /usr/local/include/c++/14.1.0/bits/streambuf.tcc \
-  /usr/local/include/c++/14.1.0/bits/streambuf_iterator.h \
-  /usr/local/include/c++/14.1.0/bits/stringfwd.h \
-  /usr/local/include/c++/14.1.0/bits/utility.h \
-  /usr/local/include/c++/14.1.0/bits/version.h \
-  /usr/local/include/c++/14.1.0/cctype \
-  /usr/local/include/c++/14.1.0/cerrno \
-  /usr/local/include/c++/14.1.0/clocale \
-  /usr/local/include/c++/14.1.0/cstdio \
-  /usr/local/include/c++/14.1.0/cstdlib \
-  /usr/local/include/c++/14.1.0/cwchar \
-  /usr/local/include/c++/14.1.0/cwctype \
-  /usr/local/include/c++/14.1.0/debug/assertions.h \
-  /usr/local/include/c++/14.1.0/debug/debug.h \
-  /usr/local/include/c++/14.1.0/exception \
-  /usr/local/include/c++/14.1.0/ext/alloc_traits.h \
-  /usr/local/include/c++/14.1.0/ext/atomicity.h \
-  /usr/local/include/c++/14.1.0/ext/numeric_traits.h \
-  /usr/local/include/c++/14.1.0/ext/string_conversions.h \
-  /usr/local/include/c++/14.1.0/ext/type_traits.h \
-  /usr/local/include/c++/14.1.0/initializer_list \
-  /usr/local/include/c++/14.1.0/ios \
-  /usr/local/include/c++/14.1.0/iosfwd \
-  /usr/local/include/c++/14.1.0/iostream \
-  /usr/local/include/c++/14.1.0/istream \
-  /usr/local/include/c++/14.1.0/new \
-  /usr/local/include/c++/14.1.0/ostream \
-  /usr/local/include/c++/14.1.0/stdexcept \
-  /usr/local/include/c++/14.1.0/streambuf \
-  /usr/local/include/c++/14.1.0/string \
-  /usr/local/include/c++/14.1.0/system_error \
-  /usr/local/include/c++/14.1.0/type_traits \
-  /usr/local/include/c++/14.1.0/typeinfo \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/atomic_word.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++allocator.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++config.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++locale.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/cpu_defines.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/ctype_base.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/ctype_inline.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/error_constants.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/gthr-default.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/gthr.h \
-  /usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/os_defines.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include-fixed/pthread.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include/stdarg.h \
-  /usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include/stddef.h \
+  /usr/local/include/c++/14.2.0/backward/binders.h \
+  /usr/local/include/c++/14.2.0/bits/alloc_traits.h \
+  /usr/local/include/c++/14.2.0/bits/allocator.h \
+  /usr/local/include/c++/14.2.0/bits/basic_ios.h \
+  /usr/local/include/c++/14.2.0/bits/basic_ios.tcc \
+  /usr/local/include/c++/14.2.0/bits/basic_string.h \
+  /usr/local/include/c++/14.2.0/bits/basic_string.tcc \
+  /usr/local/include/c++/14.2.0/bits/char_traits.h \
+  /usr/local/include/c++/14.2.0/bits/charconv.h \
+  /usr/local/include/c++/14.2.0/bits/concept_check.h \
+  /usr/local/include/c++/14.2.0/bits/cpp_type_traits.h \
+  /usr/local/include/c++/14.2.0/bits/cxxabi_forced.h \
+  /usr/local/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  /usr/local/include/c++/14.2.0/bits/exception.h \
+  /usr/local/include/c++/14.2.0/bits/exception_defines.h \
+  /usr/local/include/c++/14.2.0/bits/exception_ptr.h \
+  /usr/local/include/c++/14.2.0/bits/functexcept.h \
+  /usr/local/include/c++/14.2.0/bits/functional_hash.h \
+  /usr/local/include/c++/14.2.0/bits/hash_bytes.h \
+  /usr/local/include/c++/14.2.0/bits/invoke.h \
+  /usr/local/include/c++/14.2.0/bits/ios_base.h \
+  /usr/local/include/c++/14.2.0/bits/istream.tcc \
+  /usr/local/include/c++/14.2.0/bits/locale_classes.h \
+  /usr/local/include/c++/14.2.0/bits/locale_classes.tcc \
+  /usr/local/include/c++/14.2.0/bits/locale_facets.h \
+  /usr/local/include/c++/14.2.0/bits/locale_facets.tcc \
+  /usr/local/include/c++/14.2.0/bits/localefwd.h \
+  /usr/local/include/c++/14.2.0/bits/memoryfwd.h \
+  /usr/local/include/c++/14.2.0/bits/move.h \
+  /usr/local/include/c++/14.2.0/bits/nested_exception.h \
+  /usr/local/include/c++/14.2.0/bits/new_allocator.h \
+  /usr/local/include/c++/14.2.0/bits/ostream.tcc \
+  /usr/local/include/c++/14.2.0/bits/ostream_insert.h \
+  /usr/local/include/c++/14.2.0/bits/postypes.h \
+  /usr/local/include/c++/14.2.0/bits/predefined_ops.h \
+  /usr/local/include/c++/14.2.0/bits/ptr_traits.h \
+  /usr/local/include/c++/14.2.0/bits/range_access.h \
+  /usr/local/include/c++/14.2.0/bits/refwrap.h \
+  /usr/local/include/c++/14.2.0/bits/requires_hosted.h \
+  /usr/local/include/c++/14.2.0/bits/std_abs.h \
+  /usr/local/include/c++/14.2.0/bits/stl_algobase.h \
+  /usr/local/include/c++/14.2.0/bits/stl_construct.h \
+  /usr/local/include/c++/14.2.0/bits/stl_function.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  /usr/local/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  /usr/local/include/c++/14.2.0/bits/stl_pair.h \
+  /usr/local/include/c++/14.2.0/bits/streambuf.tcc \
+  /usr/local/include/c++/14.2.0/bits/streambuf_iterator.h \
+  /usr/local/include/c++/14.2.0/bits/stringfwd.h \
+  /usr/local/include/c++/14.2.0/bits/utility.h \
+  /usr/local/include/c++/14.2.0/bits/version.h \
+  /usr/local/include/c++/14.2.0/cctype \
+  /usr/local/include/c++/14.2.0/cerrno \
+  /usr/local/include/c++/14.2.0/clocale \
+  /usr/local/include/c++/14.2.0/cstdio \
+  /usr/local/include/c++/14.2.0/cstdlib \
+  /usr/local/include/c++/14.2.0/cwchar \
+  /usr/local/include/c++/14.2.0/cwctype \
+  /usr/local/include/c++/14.2.0/debug/assertions.h \
+  /usr/local/include/c++/14.2.0/debug/debug.h \
+  /usr/local/include/c++/14.2.0/exception \
+  /usr/local/include/c++/14.2.0/ext/alloc_traits.h \
+  /usr/local/include/c++/14.2.0/ext/atomicity.h \
+  /usr/local/include/c++/14.2.0/ext/numeric_traits.h \
+  /usr/local/include/c++/14.2.0/ext/string_conversions.h \
+  /usr/local/include/c++/14.2.0/ext/type_traits.h \
+  /usr/local/include/c++/14.2.0/initializer_list \
+  /usr/local/include/c++/14.2.0/ios \
+  /usr/local/include/c++/14.2.0/iosfwd \
+  /usr/local/include/c++/14.2.0/iostream \
+  /usr/local/include/c++/14.2.0/istream \
+  /usr/local/include/c++/14.2.0/new \
+  /usr/local/include/c++/14.2.0/ostream \
+  /usr/local/include/c++/14.2.0/stdexcept \
+  /usr/local/include/c++/14.2.0/streambuf \
+  /usr/local/include/c++/14.2.0/string \
+  /usr/local/include/c++/14.2.0/system_error \
+  /usr/local/include/c++/14.2.0/type_traits \
+  /usr/local/include/c++/14.2.0/typeinfo \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/atomic_word.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++allocator.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++config.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++locale.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/cpu_defines.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/ctype_base.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/ctype_inline.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/error_constants.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr-default.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/os_defines.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include-fixed/pthread.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stdarg.h \
+  /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stddef.h \
   topics/pointers/Pointer.h
 
 
-/usr/local/include/c++/14.1.0/cstring:
+constants/http/HttpConstants.hpp:
+
+/usr/local/include/c++/14.2.0/cstring:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
 
@@ -983,11 +1120,7 @@ CMakeFiles/cplusplus.dir/topics/pointers/Pointer.cpp.o: topics/pointers/Pointer.
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
-/usr/include/x86_64-linux-gnu/bits/in.h:
-
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
@@ -997,19 +1130,13 @@ CMakeFiles/cplusplus.dir/topics/pointers/Pointer.cpp.o: topics/pointers/Pointer.
 
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
-
-/usr/include/unistd.h:
-
-/usr/include/strings.h:
-
 /usr/include/netinet/in.h:
 
 /usr/include/linux/posix_types.h:
 
 /usr/include/linux/close_range.h:
+
+/usr/include/asm-generic/sockios.h:
 
 /usr/include/asm-generic/socket.h:
 
@@ -1017,65 +1144,79 @@ CMakeFiles/cplusplus.dir/topics/pointers/Pointer.cpp.o: topics/pointers/Pointer.
 
 server/Server.cpp:
 
-models/User/User.h:
+/usr/include/strings.h:
 
-models/User/User.cpp:
+models/Auth/Auth.cpp:
 
 server/Server.h:
 
-/usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include/stdint.h:
+/usr/include/unistd.h:
 
-/usr/local/include/c++/14.1.0/tuple:
+/usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stdint.h:
 
-/usr/local/include/c++/14.1.0/ratio:
+/usr/local/include/c++/14.2.0/tuple:
 
-/usr/local/include/c++/14.1.0/limits:
+/usr/local/include/c++/14.2.0/thread:
 
-/usr/local/include/c++/14.1.0/chrono:
+/usr/local/include/c++/14.2.0/ratio:
 
-/usr/local/include/c++/14.1.0/bits/unique_ptr.h:
+/usr/local/include/c++/14.2.0/ctime:
+
+/usr/local/include/c++/14.2.0/cstdint:
+
+/usr/local/include/c++/14.2.0/chrono:
+
+/usr/local/include/c++/14.2.0/bits/this_thread_sleep.h:
+
+/usr/local/include/c++/14.2.0/bits/chrono.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/stdint.h:
 
+main.cpp:
+
 constants/db/DBConstants.hpp:
 
-/usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include/stddef.h:
+/usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stddef.h:
 
-/usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include/stdarg.h:
+/usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stdarg.h:
 
-/usr/local/lib/gcc/x86_64-linux-gnu/14.1.0/include-fixed/pthread.h:
+/usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include-fixed/pthread.h:
 
-/usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/gthr.h:
+/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr.h:
 
-/usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/gthr-default.h:
+/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr-default.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
-/usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/ctype_base.h:
+/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/error_constants.h:
 
-/usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++config.h:
+/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/ctype_inline.h:
 
-/usr/local/include/c++/14.1.0/typeinfo:
+/usr/include/x86_64-linux-gnu/bits/environments.h:
 
-/usr/local/include/c++/14.1.0/type_traits:
+/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/cpu_defines.h:
 
-/usr/local/include/c++/14.1.0/system_error:
+/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++locale.h:
+
+/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++allocator.h:
+
+/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/atomic_word.h:
+
+/usr/local/include/c++/14.2.0/type_traits:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/local/include/c++/14.1.0/cstdint:
+/usr/local/include/c++/14.2.0/bits/stringfwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
-/usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/error_constants.h:
+/usr/include/asm-generic/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/local/include/c++/14.1.0/bits/this_thread_sleep.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
@@ -1089,17 +1230,19 @@ constants/db/DBConstants.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
+/usr/local/include/c++/14.2.0/bits/predefined_ops.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+/usr/local/include/c++/14.2.0/bits/refwrap.h:
+
+/usr/local/include/c++/14.2.0/bits/streambuf_iterator.h:
+
+/usr/local/include/c++/14.2.0/debug/debug.h:
+
+/usr/local/include/c++/14.2.0/typeinfo:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/local/include/c++/14.1.0/thread:
-
-/usr/local/include/c++/14.1.0/ext/type_traits.h:
-
-/usr/local/include/c++/14.1.0/bits/stl_iterator.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
@@ -1107,21 +1250,13 @@ constants/db/DBConstants.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
+/usr/local/include/c++/14.2.0/sstream:
+
 /usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/local/include/c++/14.1.0/debug/assertions.h:
-
-/usr/local/include/c++/14.1.0/ext/atomicity.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/local/include/c++/14.1.0/bits/range_access.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+/usr/local/include/c++/14.2.0/bits/basic_ios.tcc:
 
 /usr/include/sched.h:
 
@@ -1129,9 +1264,9 @@ constants/db/DBConstants.hpp:
 
 /usr/include/alloca.h:
 
-/usr/local/include/c++/14.1.0/ctime:
-
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/local/include/c++/14.2.0/bits/concept_check.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
@@ -1139,9 +1274,17 @@ topics/pointers/Pointer.h:
 
 /usr/include/wctype.h:
 
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
 /usr/include/postgresql/pg_config_ext.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+/usr/local/include/c++/14.2.0/bits/allocator.h:
+
+/usr/include/ctype.h:
+
+/usr/include/linux/errno.h:
+
+/usr/local/include/c++/14.2.0/bits/new_allocator.h:
 
 database/DBConnection.cpp:
 
@@ -1149,23 +1292,17 @@ database/DBConnection.cpp:
 
 /usr/include/features.h:
 
-/usr/local/include/c++/14.1.0/bits/basic_string.h:
-
-/usr/local/include/c++/14.1.0/bits/postypes.h:
+/usr/local/include/c++/14.2.0/bits/locale_classes.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/locale.h:
 
-/usr/local/include/c++/14.1.0/bits/cxxabi_init_exception.h:
+/usr/local/include/c++/14.2.0/bits/std_thread.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
-constants/http/HttpConstants.hpp:
-
-/usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/cpu_defines.h:
-
-/usr/local/include/c++/14.1.0/sstream:
+/usr/local/include/c++/14.2.0/bits/range_access.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -1181,9 +1318,7 @@ constants/http/HttpConstants.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/usr/local/include/c++/14.1.0/bits/stl_iterator_base_types.h:
-
-/usr/local/include/c++/14.1.0/ios:
+/usr/local/include/c++/14.2.0/bits/unique_ptr.h:
 
 /usr/include/stdc-predef.h:
 
@@ -1191,37 +1326,43 @@ constants/http/HttpConstants.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+/usr/local/include/c++/14.2.0/bits/version.h:
 
-/usr/local/include/c++/14.1.0/bits/allocator.h:
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/features-time64.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+/usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/local/include/c++/14.1.0/istream:
+/usr/include/postgresql/libpq-fe.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+models/User/User.h:
+
+/usr/local/include/c++/14.2.0/cwchar:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
+/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++config.h:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/local/include/c++/14.1.0/bits/version.h:
+/usr/local/include/c++/14.2.0/ext/string_conversions.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/local/include/c++/14.1.0/bits/streambuf_iterator.h:
 
 /usr/include/stdio.h:
 
 /usr/include/wchar.h:
 
-/usr/local/include/c++/14.1.0/iosfwd:
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/local/include/c++/14.2.0/backward/binders.h:
 
 /usr/include/stdlib.h:
 
@@ -1231,19 +1372,23 @@ database/DBConnection.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
-/usr/local/include/c++/14.1.0/bits/chrono.h:
-
-/usr/local/include/c++/14.1.0/bits/locale_facets.h:
-
-/usr/local/include/c++/14.1.0/string:
+/usr/include/postgresql/postgres_ext.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
+/usr/local/include/c++/14.2.0/bits/move.h:
+
+/usr/local/include/c++/14.2.0/bits/std_abs.h:
+
+/usr/local/include/c++/14.2.0/bits/stl_algobase.h:
+
+/usr/local/include/c++/14.2.0/system_error:
+
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/local/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
@@ -1251,200 +1396,192 @@ database/DBConnection.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
+/usr/local/include/c++/14.2.0/bits/parse_numbers.h:
+
 /usr/include/errno.h:
 
-/usr/local/include/c++/14.1.0/bits/new_allocator.h:
+/usr/include/linux/stddef.h:
 
-/usr/local/include/c++/14.1.0/backward/binders.h:
+/usr/local/include/c++/14.2.0/bits/utility.h:
+
+/usr/local/include/c++/14.2.0/ios:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
-/usr/local/include/c++/14.1.0/bits/hash_bytes.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/local/include/c++/14.1.0/ext/string_conversions.h:
-
-/usr/local/include/c++/14.1.0/bits/concept_check.h:
+/usr/local/include/c++/14.2.0/bits/postypes.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/local/include/c++/14.1.0/bits/functional_hash.h:
-
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/local/include/c++/14.2.0/bits/istream.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
+/usr/local/include/c++/14.2.0/limits:
+
 /usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/local/include/c++/14.1.0/bits/locale_classes.tcc:
-
-/usr/local/include/c++/14.1.0/bits/locale_facets.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/usr/local/include/c++/14.1.0/bits/nested_exception.h:
 
 topics/pointers/Pointer.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/usr/include/string.h:
+/usr/local/include/c++/14.2.0/bits/ptr_traits.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/usr/include/x86_64-linux-gnu/bits/environments.h:
+/usr/local/include/c++/14.2.0/bits/stl_construct.h:
 
-/usr/local/include/c++/14.1.0/bits/parse_numbers.h:
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
-/usr/local/include/c++/14.1.0/bits/stl_pair.h:
+/usr/local/include/c++/14.2.0/cstdlib:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/ctype_inline.h:
-
-/usr/local/include/c++/14.1.0/bits/exception_defines.h:
-
-/usr/local/include/c++/14.1.0/bits/memoryfwd.h:
-
-/usr/local/include/c++/14.1.0/streambuf:
-
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
-/usr/local/include/c++/14.1.0/bits/locale_classes.h:
+/usr/local/include/c++/14.2.0/cstdio:
 
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+/usr/local/include/c++/14.2.0/bits/basic_ios.h:
 
-/usr/local/include/c++/14.1.0/bits/stringfwd.h:
+/usr/local/include/c++/14.2.0/ext/atomicity.h:
 
-/usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/os_defines.h:
+/usr/local/include/c++/14.2.0/bits/alloc_traits.h:
 
-/usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/atomic_word.h:
+/usr/local/include/c++/14.2.0/bits/basic_string.h:
 
-/usr/local/include/c++/14.1.0/bits/basic_ios.h:
+/usr/local/include/c++/14.2.0/bits/basic_string.tcc:
 
-/usr/local/include/c++/14.1.0/bits/basic_ios.tcc:
+/usr/include/x86_64-linux-gnu/bits/in.h:
 
-/usr/local/include/c++/14.1.0/bits/basic_string.tcc:
+/usr/local/include/c++/14.2.0/bits/char_traits.h:
 
-/usr/local/include/c++/14.1.0/bits/alloc_traits.h:
+/usr/local/include/c++/14.2.0/bits/cxxabi_init_exception.h:
 
-/usr/local/include/c++/14.1.0/bits/char_traits.h:
+/usr/local/include/c++/14.2.0/bits/functexcept.h:
 
-/usr/local/include/c++/14.1.0/bits/charconv.h:
+/usr/local/include/c++/14.2.0/cctype:
 
-/usr/include/asm-generic/sockios.h:
+/usr/local/include/c++/14.2.0/bits/charconv.h:
 
-/usr/local/include/c++/14.1.0/bits/cpp_type_traits.h:
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
-/usr/local/include/c++/14.1.0/bits/cxxabi_forced.h:
+/usr/local/include/c++/14.2.0/bits/cpp_type_traits.h:
 
-/usr/local/include/c++/14.1.0/bits/exception.h:
+/usr/local/include/c++/14.2.0/bits/cxxabi_forced.h:
 
-/usr/local/include/c++/14.1.0/bits/exception_ptr.h:
+/usr/local/include/c++/14.2.0/bits/exception.h:
 
-/usr/include/ctype.h:
+/usr/local/include/c++/14.2.0/clocale:
 
-/usr/include/linux/errno.h:
+/usr/local/include/c++/14.2.0/bits/ostream.tcc:
 
-/usr/local/include/c++/14.1.0/cwchar:
+/usr/local/include/c++/14.2.0/bits/exception_defines.h:
 
-/usr/local/include/c++/14.1.0/bits/functexcept.h:
+/usr/local/include/c++/14.2.0/bits/exception_ptr.h:
 
-/usr/local/include/c++/14.1.0/bits/uses_allocator.h:
+/usr/local/include/c++/14.2.0/bits/locale_facets.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+/usr/local/include/c++/14.2.0/bits/stl_function.h:
 
-/usr/local/include/c++/14.1.0/bits/utility.h:
+/usr/local/include/c++/14.2.0/bits/functional_hash.h:
 
-/usr/local/include/c++/14.1.0/bits/invoke.h:
+/usr/local/include/c++/14.2.0/bits/hash_bytes.h:
 
-/usr/include/postgresql/postgres_ext.h:
+/usr/local/include/c++/14.2.0/bits/invoke.h:
 
-/usr/local/include/c++/14.1.0/bits/ios_base.h:
+models/User/User.cpp:
 
-/usr/local/include/c++/14.1.0/bits/istream.tcc:
+/usr/local/include/c++/14.2.0/bits/ios_base.h:
 
-/usr/local/include/c++/14.1.0/bits/localefwd.h:
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
-/usr/local/include/c++/14.1.0/debug/debug.h:
+/usr/local/include/c++/14.2.0/bits/locale_classes.h:
 
-main.cpp:
+/usr/include/string.h:
 
-/usr/local/include/c++/14.1.0/bits/move.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/local/include/c++/14.1.0/bits/requires_hosted.h:
+/usr/local/include/c++/14.2.0/bits/locale_facets.h:
 
-/usr/local/include/c++/14.1.0/bits/ostream.tcc:
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
-/usr/local/include/c++/14.1.0/bits/predefined_ops.h:
+/usr/local/include/c++/14.2.0/bits/localefwd.h:
 
-/usr/include/asm-generic/errno.h:
+/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/ctype_base.h:
 
-/usr/local/include/c++/14.1.0/bits/ptr_traits.h:
+/usr/local/include/c++/14.2.0/bits/nested_exception.h:
 
-/usr/local/include/c++/14.1.0/bits/stl_algobase.h:
+/usr/local/include/c++/14.2.0/bits/ostream_insert.h:
 
-/usr/local/include/c++/14.1.0/bits/refwrap.h:
+/usr/local/include/c++/14.2.0/bits/requires_hosted.h:
 
-/usr/local/include/c++/14.1.0/bits/ostream_insert.h:
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/usr/local/include/c++/14.1.0/bits/sstream.tcc:
+/usr/local/include/c++/14.2.0/bits/streambuf.tcc:
 
-/usr/local/include/c++/14.1.0/bits/stl_construct.h:
+/usr/local/include/c++/14.2.0/bits/uses_allocator.h:
 
-/usr/local/include/c++/14.1.0/bits/std_abs.h:
+/usr/local/include/c++/14.2.0/bits/sstream.tcc:
 
-/usr/local/include/c++/14.1.0/bits/std_thread.h:
+/usr/local/include/c++/14.2.0/bits/stl_iterator.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/local/include/c++/14.2.0/bits/stl_iterator_base_types.h:
+
+/usr/local/include/c++/14.2.0/bits/stl_pair.h:
+
+models/Auth/Auth.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/local/include/c++/14.2.0/bits/memoryfwd.h:
+
+/usr/local/include/c++/14.2.0/cerrno:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/local/include/c++/14.2.0/cwctype:
+
+/usr/local/include/c++/14.2.0/debug/assertions.h:
+
+/usr/local/include/c++/14.2.0/exception:
+
+/usr/local/include/c++/14.2.0/iostream:
+
+/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/os_defines.h:
+
+/usr/local/include/c++/14.2.0/ext/alloc_traits.h:
+
+/usr/local/include/c++/14.2.0/ext/numeric_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/local/include/c++/14.2.0/ext/type_traits.h:
+
+/usr/local/include/c++/14.2.0/initializer_list:
+
+/usr/local/include/c++/14.2.0/iosfwd:
+
+/usr/local/include/c++/14.2.0/istream:
+
+/usr/local/include/c++/14.2.0/new:
+
+/usr/local/include/c++/14.2.0/ostream:
+
+/usr/local/include/c++/14.2.0/stdexcept:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/usr/local/include/c++/14.1.0/bits/stl_function.h:
+/usr/local/include/c++/14.2.0/streambuf:
 
-/usr/local/include/c++/14.1.0/bits/stl_iterator_base_funcs.h:
-
-/usr/local/include/c++/14.1.0/bits/streambuf.tcc:
-
-/usr/local/include/c++/14.1.0/ostream:
-
-/usr/local/include/c++/14.1.0/cerrno:
-
-/usr/local/include/c++/14.1.0/clocale:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/postgresql/libpq-fe.h:
-
-/usr/local/include/c++/14.1.0/cstdio:
-
-/usr/local/include/c++/14.1.0/cstdlib:
-
-/usr/local/include/c++/14.1.0/cwctype:
-
-/usr/include/linux/stddef.h:
-
-/usr/local/include/c++/14.1.0/cctype:
-
-/usr/local/include/c++/14.1.0/exception:
-
-/usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++locale.h:
-
-/usr/local/include/c++/14.1.0/ext/alloc_traits.h:
-
-/usr/local/include/c++/14.1.0/ext/numeric_traits.h:
-
-/usr/local/include/c++/14.1.0/x86_64-linux-gnu/bits/c++allocator.h:
-
-/usr/local/include/c++/14.1.0/initializer_list:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/local/include/c++/14.1.0/iostream:
-
-/usr/local/include/c++/14.1.0/stdexcept:
-
-/usr/local/include/c++/14.1.0/new:
+/usr/local/include/c++/14.2.0/string:
