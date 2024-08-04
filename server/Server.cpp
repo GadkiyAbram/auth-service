@@ -128,14 +128,7 @@ void Server::send_response(
 }
 
 void Server::handle_login(int client_socket) {
-    const DBConfig dbConfig = DBConnection::getDBConfig();
-    const DBConnection& dbConnection = DBConnection::getInstance(
-        dbConfig.dbName,
-        dbConfig.user,
-        dbConfig.password,
-        dbConfig.host,
-        dbConfig.port
-    );
+    const DBConnection& dbConnection = DBConnection::getInstance();
 
     PGconn* conn = dbConnection.connection;
 

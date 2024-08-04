@@ -13,15 +13,7 @@ void keepAlive() {
 }
 
 int checkConnection() {
-    const DBConfig dbConfig = DBConnection::getDBConfig();
-
-    const DBConnection& dbConnection = DBConnection::getInstance(
-        dbConfig.dbName,
-        dbConfig.user,
-        dbConfig.password,
-        dbConfig.host,
-        dbConfig.port
-        );
+    const DBConnection& dbConnection = DBConnection::getInstance();
 
     if (PQstatus(dbConnection.connection) != CONNECTION_OK) {
         cerr << "Connection failed" << PQerrorMessage(dbConnection.connection) << endl;

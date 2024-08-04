@@ -24,13 +24,7 @@ public:
     DBConnection(const DBConnection&) = delete;
     DBConnection& operator=(const DBConnection) = delete;
 
-    static DBConnection& getInstance(
-        const string& dbname,
-        const string& user,
-        const string& password,
-        const string& host,
-        int port
-        );
+    static DBConnection& getInstance();
 
     DBConnection(
         const string& dbName,
