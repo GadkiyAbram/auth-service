@@ -1,40 +1,21 @@
-#include <chrono>
-#include <iostream>
-#include <thread>
-#include "database/DBConnection.h"
 #include "server/Server.h"
+#include <boost/asio/ip/tcp.hpp>
 
+using boost::asio::ip::tcp;
 using namespace std;
-
-void keepAlive() {
-    while (true) {
-        this_thread::sleep_for(chrono::seconds(1));
-    }
-}
-
-int checkConnection() {
-    const DBConnection& dbConnection = DBConnection::getInstance();
-
-    if (PQstatus(dbConnection.connection) != CONNECTION_OK) {
-        cerr << "Connection failed" << PQerrorMessage(dbConnection.connection) << endl;
-    }
-
-    cout << "Connection successful" << endl;
-
-    return 0;
-}
+using namespace std::string_literals;
 
 int main() {
-    cout << "\nHello, this is the Dockerized CPP application!\n\n";
+    try {
+        boost::asio::io_context io_context;
+        const int port = 8080;
 
-    checkConnection();
-
-    Server server(8080);
-
-    thread server_thread(&Server::launch, server);
-    server_thread.detach();
-
-    keepAlive();
+        // Create and run the server
+        Server server(io_context, port);
+        server.launch();
+    } catch (std::exception& e) {
+        std::cerr << "Exception: " << e.what() << std::endl;
+    }
 
     return 0;
 }

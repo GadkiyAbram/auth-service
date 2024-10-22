@@ -1,3 +1,0 @@
-/usr/src/cplusplus/CMakeFiles/cplusplus.dir
-/usr/src/cplusplus/CMakeFiles/edit_cache.dir
-/usr/src/cplusplus/CMakeFiles/rebuild_cache.dir

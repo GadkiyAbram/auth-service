@@ -1,11 +1,14 @@
 cmake_minimum_required(VERSION 3.28)
 project(CplusPlusLazy)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_BUILD_TYPE Debug)
 
 # Find and include PostgreSQL
 find_package(PostgreSQL REQUIRED)
+find_package(Boost REQUIRED)
 include_directories(${PostgreSQL_INCLUDE_DIRS})
+include_directories(/usr/local/include/nlohmann)
 
 set(SOURCES
     main.cpp
@@ -14,7 +17,8 @@ set(SOURCES
     server/Server.cpp
     models/User/User.cpp
     models/User/User.h
-        models/Auth/Auth.cpp models/Auth/Auth.h)
+    models/Auth/Auth.cpp models/Auth/Auth.h
+        constants/http/Methods.h)
 
 # Executable
 add_executable(cplusplus ${SOURCES})
@@ -23,6 +27,7 @@ add_executable(cplusplus ${SOURCES})
 target_link_libraries(
     cplusplus
     ${PostgreSQL_LIBRARIES}
+    ${Boost_LIBRARIES}
     pq
     pthread
 )

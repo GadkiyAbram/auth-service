@@ -1,1 +1,0 @@
-/usr/local/bin/c++ CMakeFiles/cplusplus.dir/main.cpp.o CMakeFiles/cplusplus.dir/database/DBConnection.cpp.o CMakeFiles/cplusplus.dir/topics/pointers/Pointer.cpp.o CMakeFiles/cplusplus.dir/server/Server.cpp.o CMakeFiles/cplusplus.dir/models/User/User.cpp.o CMakeFiles/cplusplus.dir/models/Auth/Auth.cpp.o -o cplusplus  /usr/lib/x86_64-linux-gnu/libpq.so -lpq -lpthread 
