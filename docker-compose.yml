@@ -16,14 +16,7 @@ services:
       - .:/usr/src/cplusplus
     working_dir: /usr/src/cplusplus
     ports:
-      - "${CPP_APP_EXTERNAL_PORT}:${CPP_APP_INTERNAL_PORT}"
-#    command: bash -c "g++ -o cplusplus
-#      main.cpp
-#      database/DBConnection.cpp
-#      server/Server.cpp
-#      -I/usr/include/postgresql
-#      -L/usr/lib
-#      -lpq && ./cplusplus"
+      - "${SERVER_EXTERNAL_PORT}:${SERVER_INTERNAL_PORT}"
 
   db:
     image: postgres:latest

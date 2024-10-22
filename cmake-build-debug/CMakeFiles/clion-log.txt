@@ -1,4 +1,0 @@
-Cannot generate into /home/aleksandr/PROJECTS/MINE/C++/CplusPlusLazy
-It is already used for project /usr/src/cplusplus
-
-Please either delete it manually or select another generation directory
