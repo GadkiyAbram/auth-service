@@ -3,7 +3,10 @@
 #include <iostream>
 #include <nlohmann/json.hpp>
 #include <sstream>
+#include "../../services/user/UserDTO.h"
+#include "../../services/user/UserRepository.h"
 #include "../../constants/http/methods/Methods.h"
+#include "../../database/DBConnection.h"
 #include "../../constants/http/Http.h"
 #include "../../constants/routes/Routes.h"
 
@@ -26,8 +29,15 @@ Router::Router() {
         try {
             json json_data = json::parse(body);
             string username = json_data["username"];
+            string password = json_data["password"];
 
-            string response = "Received username: " + username;
+            const DBConnection& dbConnection = DBConnection::getInstance();
+
+            UserRepository userRepository(dbConnection);
+
+            UserDTO user = userRepository.getUser(username);
+
+            string response = "Username: " + user.getUsername() + " and password: " + user.getPassword();
 
             return std::make_pair(HttpCodeMessages::OK, string (response));
         } catch (json::parse_error& e) {

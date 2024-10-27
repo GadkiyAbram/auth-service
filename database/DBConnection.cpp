@@ -1,7 +1,3 @@
-//
-// Created by aleksandr on 26.05.24.
-//
-
 #include "DBConnection.h"
 #include <iostream>
 #include <postgresql/libpq-fe.h>
@@ -52,14 +48,14 @@ DBConnection& DBConnection::getInstance() {
     return instance;
 }
 
-PGresult* DBConnection::query(const string& query) {
-    PGresult *res = PQexec(connection, query.c_str());
-    if (PQresultStatus(res) != PGRES_TUPLES_OK) {
+PGresult* DBConnection::query(const string& query) const {
+    PGresult *result = PQexec(connection, query.c_str());
+    if (PQresultStatus(result) != PGRES_TUPLES_OK) {
         std::cerr << "Query failed: " << PQerrorMessage(connection) << endl;
-        PQclear(res);
+        PQclear(result);
         doExit(connection);
     }
-    return res;
+    return result;
 }
 
 DBConfig DBConnection::getDBConfig() {

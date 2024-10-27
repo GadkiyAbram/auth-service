@@ -25,7 +25,7 @@ public:
     void setSurname(const string &surname);
     void setUsername(const string &username);
 
-    static User* findByUsername(const string &username);
+    static void findByUsername(const string &username);
 
 private:
     int id;
