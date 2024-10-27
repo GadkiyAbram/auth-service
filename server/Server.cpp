@@ -1,7 +1,3 @@
-//
-// Created by aleksandr on 23.06.24.
-//
-
 #include "Server.h"
 #include <sys/socket.h>
 #include <sys/types.h>
@@ -15,10 +11,11 @@
 #include "../database/DBConnection.h"
 #include <postgresql/libpq-fe.h>
 #include "../constants/http/HttpConstants.hpp"
-#include "../constants/http/Methods.h"
+#include "../constants/http/methods/Methods.h"
 #include <iostream>
 #include <nlohmann/json.hpp>
 #include <boost/asio.hpp>
+#include "./router/Router.h"
 
 using namespace std;
 using boost::asio::ip::tcp;
@@ -39,69 +36,74 @@ void Server::launch() {
         acceptor_.accept(socket);
 
         // Handle the client in a separate function
-        handle_request(std::move(socket));
+        handle_request(socket);
     }
 }
 
-void Server::handle_request(tcp::socket socket) {
+void Server::handle_request(tcp::socket& socket) {
     try {
         // Read the request headers
         boost::asio::streambuf buffer;
         boost::asio::read_until(socket, buffer, "\r\n\r\n");  // Read until end of headers
 
-        std::istream is(&buffer);
-        std::string request_line;
-        std::getline(is, request_line);
+        istream is(&buffer);
+        string request_line;
+        getline(is, request_line);
 
-        std::cout << "Raw request line: " << request_line << std::endl;
+        cout << "Raw request line: " << request_line << std::endl;
 
         // Extract the request line, headers, and body
-        std::string method;
-        std::string path;
-        std::string version;
+        string method;
+        string path;
+        string version;
 
-        std::istringstream request_stream(request_line);
+        istringstream request_stream(request_line);
         request_stream >> method >> path >> version;
 
         // Read remaining headers
-        std::string header;
+        string header;
         while (std::getline(is, header) && header != "\r") {
             std::cout << "Header: " << header << std::endl;
         }
 
         // Read the rest of the data (assuming content-length is known or until EOF)
-        std::string body;
-        std::ostringstream body_stream;
+        string body;
+        ostringstream body_stream;
         body_stream << is.rdbuf();
         body = body_stream.str();
 
-        std::cout << "Received data: " << body << std::endl;
+        Router router;
 
-        if (method == Methods::POST) {
-            try {
-                // Parse JSON
-                json json_data = json::parse(body);
-                std::string username = json_data["username"];
-                std::cout << "Parsed username: " << username << std::endl;
+        std::pair<string, string> response = router.route(method, path, body);
 
-                // Respond to client
-                std::string response = "Received username: " + username;
-                std::string http_response = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: " + std::to_string(response.size()) + "\r\n\r\n" + response;
+        string http_response = "HTTP/1.1 " + response.first + "\r\nContent-Type: text/plain\r\nContent-Length: " +
+                std::to_string(response.second.size()) + "\r\n\r\n" + response.second;
 
-                boost::asio::write(socket, boost::asio::buffer(http_response));
-            } catch (json::parse_error& e) {
-                std::cerr << "JSON parse error: " << e.what() << std::endl;
-                std::string response = "Invalid JSON";
-                std::string http_response = "HTTP/1.1 400 Bad Request\r\nContent-Type: text/plain\r\nContent-Length: " + std::to_string(response.size()) + "\r\n\r\n" + response;
+        boost::asio::write(socket, boost::asio::buffer(http_response));
 
-                boost::asio::write(socket, boost::asio::buffer(http_response));
-            }
-        } else {
-            std::string response = "Method not supported";
-            std::string http_response = "HTTP/1.1 405 Method Not Allowed\r\nContent-Type: text/plain\r\nContent-Length: " + std::to_string(response.size()) + "\r\n\r\n" + response;
-
-            boost::asio::write(socket, boost::asio::buffer(http_response));
-        }
+//        if (method == Methods::POST) {
+//            try {
+//                // Parse JSON
+//                json json_data = json::parse(body);
+//                string username = json_data["username"];
+//
+//                // Respond to client
+//                response = "Received username: " + username;
+//                string http_response = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: " + std::to_string(response.size()) + "\r\n\r\n" + response;
+//
+//                boost::asio::write(socket, boost::asio::buffer(http_response));
+//            } catch (json::parse_error& e) {
+//                response = "Invalid JSON";
+//                string http_response = "HTTP/1.1 400 Bad Request\r\nContent-Type: text/plain\r\nContent-Length: " + std::to_string(response.size()) + "\r\n\r\n" + response;
+//
+//                boost::asio::write(socket, boost::asio::buffer(http_response));
+//            }
+//        } else {
+//            string response = "Method not supported";
+//            string http_response = "HTTP/1.1 405 Method Not Allowed\r\nContent-Type: text/plain\r\nContent-Length: " + std::to_string(response.size()) + "\r\n\r\n" + response;
+//
+//            boost::asio::write(socket, boost::asio::buffer(http_response));
+//        }
     } catch (std::exception& e) {
         std::cerr << "Exception: " << e.what() << std::endl;
     }
