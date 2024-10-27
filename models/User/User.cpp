@@ -45,8 +45,8 @@ void User::setUsername(const string &username) {
     this->username = username;
 }
 
-User* User::findByUsername(const string &username) {
-
+void User::findByUsername(const string &username) {
+    return;
 }
 
 

@@ -369,6 +369,54 @@ server/router/Router.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/server/router/Router.cpp.s
 .PHONY : server/router/Router.cpp.s
 
+services/user/UserDTO.o: services/user/UserDTO.cpp.o
+.PHONY : services/user/UserDTO.o
+
+# target to build an object file
+services/user/UserDTO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/services/user/UserDTO.cpp.o
+.PHONY : services/user/UserDTO.cpp.o
+
+services/user/UserDTO.i: services/user/UserDTO.cpp.i
+.PHONY : services/user/UserDTO.i
+
+# target to preprocess a source file
+services/user/UserDTO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/services/user/UserDTO.cpp.i
+.PHONY : services/user/UserDTO.cpp.i
+
+services/user/UserDTO.s: services/user/UserDTO.cpp.s
+.PHONY : services/user/UserDTO.s
+
+# target to generate assembly for a file
+services/user/UserDTO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/services/user/UserDTO.cpp.s
+.PHONY : services/user/UserDTO.cpp.s
+
+services/user/UserRepository.o: services/user/UserRepository.cpp.o
+.PHONY : services/user/UserRepository.o
+
+# target to build an object file
+services/user/UserRepository.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/services/user/UserRepository.cpp.o
+.PHONY : services/user/UserRepository.cpp.o
+
+services/user/UserRepository.i: services/user/UserRepository.cpp.i
+.PHONY : services/user/UserRepository.i
+
+# target to preprocess a source file
+services/user/UserRepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/services/user/UserRepository.cpp.i
+.PHONY : services/user/UserRepository.cpp.i
+
+services/user/UserRepository.s: services/user/UserRepository.cpp.s
+.PHONY : services/user/UserRepository.s
+
+# target to generate assembly for a file
+services/user/UserRepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/services/user/UserRepository.cpp.s
+.PHONY : services/user/UserRepository.cpp.s
+
 topics/pointers/Pointer.o: topics/pointers/Pointer.cpp.o
 .PHONY : topics/pointers/Pointer.o
 
@@ -432,6 +480,12 @@ help:
 	@echo "... server/router/Router.o"
 	@echo "... server/router/Router.i"
 	@echo "... server/router/Router.s"
+	@echo "... services/user/UserDTO.o"
+	@echo "... services/user/UserDTO.i"
+	@echo "... services/user/UserDTO.s"
+	@echo "... services/user/UserRepository.o"
+	@echo "... services/user/UserRepository.i"
+	@echo "... services/user/UserRepository.s"
 	@echo "... topics/pointers/Pointer.o"
 	@echo "... topics/pointers/Pointer.i"
 	@echo "... topics/pointers/Pointer.s"

@@ -1,7 +1,3 @@
-//
-// Created by aleksandr on 26.05.24.
-//
-
 #ifndef DBCONNECTION_H
 #define DBCONNECTION_H
 
@@ -38,7 +34,7 @@ public:
 
     void execute(const string& query);
 
-    PGresult* query(const string& query);
+    PGresult* query(const string& query) const;
     PGconn *connection;
 
     static DBConfig getDBConfig();

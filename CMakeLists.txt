@@ -18,16 +18,21 @@ set(SOURCES
     models/User/User.h
     models/Auth/Auth.cpp
     models/Auth/Auth.h
-    constants/http/methods/Methods.h
-    constants/http/methods/Methods.cpp
-    server/IRequestHandler.h
-    server/router/Router.h
-    server/router/Router.cpp
-    constants/http/responseCodes/ResponseCodes.h
-    constants/http/responseCodes/ResponseCodes.cpp
     constants/http/Http.h
     constants/http/Http.cpp
-    constants/routes/Routes.h constants/routes/Routes.cpp)
+    constants/http/methods/Methods.h
+    constants/http/methods/Methods.cpp
+    constants/http/responseCodes/ResponseCodes.h
+    constants/http/responseCodes/ResponseCodes.cpp
+    server/router/Router.h
+    server/router/Router.cpp
+    constants/routes/Routes.h
+    constants/routes/Routes.cpp
+    services/user/UserDTO.h
+    services/user/UserRepository.h
+    services/user/UserDTO.cpp
+    services/user/UserRepository.cpp
+    server/IRequestHandler.h)
 
 # Executable
 add_executable(cplusplus ${SOURCES})
