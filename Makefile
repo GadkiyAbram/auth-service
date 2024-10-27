@@ -129,6 +129,78 @@ cplusplus/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/build
 .PHONY : cplusplus/fast
 
+constants/http/Http.o: constants/http/Http.cpp.o
+.PHONY : constants/http/Http.o
+
+# target to build an object file
+constants/http/Http.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/Http.cpp.o
+.PHONY : constants/http/Http.cpp.o
+
+constants/http/Http.i: constants/http/Http.cpp.i
+.PHONY : constants/http/Http.i
+
+# target to preprocess a source file
+constants/http/Http.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/Http.cpp.i
+.PHONY : constants/http/Http.cpp.i
+
+constants/http/Http.s: constants/http/Http.cpp.s
+.PHONY : constants/http/Http.s
+
+# target to generate assembly for a file
+constants/http/Http.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/Http.cpp.s
+.PHONY : constants/http/Http.cpp.s
+
+constants/http/methods/Methods.o: constants/http/methods/Methods.cpp.o
+.PHONY : constants/http/methods/Methods.o
+
+# target to build an object file
+constants/http/methods/Methods.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/methods/Methods.cpp.o
+.PHONY : constants/http/methods/Methods.cpp.o
+
+constants/http/methods/Methods.i: constants/http/methods/Methods.cpp.i
+.PHONY : constants/http/methods/Methods.i
+
+# target to preprocess a source file
+constants/http/methods/Methods.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/methods/Methods.cpp.i
+.PHONY : constants/http/methods/Methods.cpp.i
+
+constants/http/methods/Methods.s: constants/http/methods/Methods.cpp.s
+.PHONY : constants/http/methods/Methods.s
+
+# target to generate assembly for a file
+constants/http/methods/Methods.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/methods/Methods.cpp.s
+.PHONY : constants/http/methods/Methods.cpp.s
+
+constants/http/responseCodes/ResponseCodes.o: constants/http/responseCodes/ResponseCodes.cpp.o
+.PHONY : constants/http/responseCodes/ResponseCodes.o
+
+# target to build an object file
+constants/http/responseCodes/ResponseCodes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/responseCodes/ResponseCodes.cpp.o
+.PHONY : constants/http/responseCodes/ResponseCodes.cpp.o
+
+constants/http/responseCodes/ResponseCodes.i: constants/http/responseCodes/ResponseCodes.cpp.i
+.PHONY : constants/http/responseCodes/ResponseCodes.i
+
+# target to preprocess a source file
+constants/http/responseCodes/ResponseCodes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/responseCodes/ResponseCodes.cpp.i
+.PHONY : constants/http/responseCodes/ResponseCodes.cpp.i
+
+constants/http/responseCodes/ResponseCodes.s: constants/http/responseCodes/ResponseCodes.cpp.s
+.PHONY : constants/http/responseCodes/ResponseCodes.s
+
+# target to generate assembly for a file
+constants/http/responseCodes/ResponseCodes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/responseCodes/ResponseCodes.cpp.s
+.PHONY : constants/http/responseCodes/ResponseCodes.cpp.s
+
 database/DBConnection.o: database/DBConnection.cpp.o
 .PHONY : database/DBConnection.o
 
@@ -249,6 +321,30 @@ server/Server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/server/Server.cpp.s
 .PHONY : server/Server.cpp.s
 
+server/router/Router.o: server/router/Router.cpp.o
+.PHONY : server/router/Router.o
+
+# target to build an object file
+server/router/Router.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/server/router/Router.cpp.o
+.PHONY : server/router/Router.cpp.o
+
+server/router/Router.i: server/router/Router.cpp.i
+.PHONY : server/router/Router.i
+
+# target to preprocess a source file
+server/router/Router.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/server/router/Router.cpp.i
+.PHONY : server/router/Router.cpp.i
+
+server/router/Router.s: server/router/Router.cpp.s
+.PHONY : server/router/Router.s
+
+# target to generate assembly for a file
+server/router/Router.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/server/router/Router.cpp.s
+.PHONY : server/router/Router.cpp.s
+
 topics/pointers/Pointer.o: topics/pointers/Pointer.cpp.o
 .PHONY : topics/pointers/Pointer.o
 
@@ -282,6 +378,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cplusplus"
+	@echo "... constants/http/Http.o"
+	@echo "... constants/http/Http.i"
+	@echo "... constants/http/Http.s"
+	@echo "... constants/http/methods/Methods.o"
+	@echo "... constants/http/methods/Methods.i"
+	@echo "... constants/http/methods/Methods.s"
+	@echo "... constants/http/responseCodes/ResponseCodes.o"
+	@echo "... constants/http/responseCodes/ResponseCodes.i"
+	@echo "... constants/http/responseCodes/ResponseCodes.s"
 	@echo "... database/DBConnection.o"
 	@echo "... database/DBConnection.i"
 	@echo "... database/DBConnection.s"
@@ -297,6 +402,9 @@ help:
 	@echo "... server/Server.o"
 	@echo "... server/Server.i"
 	@echo "... server/Server.s"
+	@echo "... server/router/Router.o"
+	@echo "... server/router/Router.i"
+	@echo "... server/router/Router.s"
 	@echo "... topics/pointers/Pointer.o"
 	@echo "... topics/pointers/Pointer.i"
 	@echo "... topics/pointers/Pointer.s"

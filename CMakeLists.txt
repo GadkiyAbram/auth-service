@@ -17,8 +17,18 @@ set(SOURCES
     server/Server.cpp
     models/User/User.cpp
     models/User/User.h
-    models/Auth/Auth.cpp models/Auth/Auth.h
-        constants/http/Methods.h)
+    models/Auth/Auth.cpp
+    models/Auth/Auth.h
+    constants/http/methods/Methods.h
+    constants/http/methods/Methods.cpp
+    server/IRequestHandler.h
+    server/router/Router.h
+    server/router/Router.cpp
+    constants/http/responseCodes/ResponseCodes.h
+    constants/http/responseCodes/ResponseCodes.cpp
+    constants/http/Http.h
+    constants/http/Http.cpp
+)
 
 # Executable
 add_executable(cplusplus ${SOURCES})
