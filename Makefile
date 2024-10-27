@@ -201,6 +201,30 @@ constants/http/responseCodes/ResponseCodes.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/responseCodes/ResponseCodes.cpp.s
 .PHONY : constants/http/responseCodes/ResponseCodes.cpp.s
 
+constants/routes/Routes.o: constants/routes/Routes.cpp.o
+.PHONY : constants/routes/Routes.o
+
+# target to build an object file
+constants/routes/Routes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/routes/Routes.cpp.o
+.PHONY : constants/routes/Routes.cpp.o
+
+constants/routes/Routes.i: constants/routes/Routes.cpp.i
+.PHONY : constants/routes/Routes.i
+
+# target to preprocess a source file
+constants/routes/Routes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/routes/Routes.cpp.i
+.PHONY : constants/routes/Routes.cpp.i
+
+constants/routes/Routes.s: constants/routes/Routes.cpp.s
+.PHONY : constants/routes/Routes.s
+
+# target to generate assembly for a file
+constants/routes/Routes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/routes/Routes.cpp.s
+.PHONY : constants/routes/Routes.cpp.s
+
 database/DBConnection.o: database/DBConnection.cpp.o
 .PHONY : database/DBConnection.o
 
@@ -387,6 +411,9 @@ help:
 	@echo "... constants/http/responseCodes/ResponseCodes.o"
 	@echo "... constants/http/responseCodes/ResponseCodes.i"
 	@echo "... constants/http/responseCodes/ResponseCodes.s"
+	@echo "... constants/routes/Routes.o"
+	@echo "... constants/routes/Routes.i"
+	@echo "... constants/routes/Routes.s"
 	@echo "... database/DBConnection.o"
 	@echo "... database/DBConnection.i"
 	@echo "... database/DBConnection.s"

@@ -4,7 +4,6 @@ project(CplusPlusLazy)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_BUILD_TYPE Debug)
 
-# Find and include PostgreSQL
 find_package(PostgreSQL REQUIRED)
 find_package(Boost REQUIRED)
 include_directories(${PostgreSQL_INCLUDE_DIRS})
@@ -28,7 +27,7 @@ set(SOURCES
     constants/http/responseCodes/ResponseCodes.cpp
     constants/http/Http.h
     constants/http/Http.cpp
-)
+    constants/routes/Routes.h constants/routes/Routes.cpp)
 
 # Executable
 add_executable(cplusplus ${SOURCES})

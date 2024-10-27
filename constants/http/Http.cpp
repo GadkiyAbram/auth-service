@@ -11,13 +11,23 @@ namespace HttpCodes {
 
 namespace HttpMessages {
     const string OK = "OK";
-    const string BAD_REQUEST = "BAD_REQUEST";
-    const string NOT_AUTHORIZED = "NOT_AUTHORIZED";
-    const string NOT_FOUND = "NOT_FOUND";
-    const string METHOD_NOT_ALLOWED = "METHOD_NOT_ALLOWED";
-    const string SERVER_ERROR = "SERVER_ERROR";
+    const string BAD_REQUEST = "Bad Request";
+    const string NOT_AUTHORIZED = "Not Authorized";
+    const string NOT_FOUND = "Not Found";
+    const string METHOD_NOT_ALLOWED = "Method Not Allowed";
+    const string SERVER_ERROR = "Server Error";
+}
+
+namespace HttpCodeMessages {
+    const string OK = "200 OK";
+    const string BAD_REQUEST = "400 Bad Request";
+    const string NOT_AUTHORIZED = "403 Not Authorized";
+    const string NOT_FOUND = "404 Not Found";
+    const string METHOD_NOT_ALLOWED = "405 Method Not Allowed";
+    const string SERVER_ERROR = "500 Server Error";
 }
 
 namespace HttpCommon {
     const string INVALID_JSON = "Invalid JSON";
+    const string ROUTE_NOT_FOUND = "Route not found";
 }
