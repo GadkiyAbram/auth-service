@@ -20,15 +20,6 @@ public:
 private:
     int server_socket;
 
-    void send_response(
-        int client_socket, 
-        const std::string& status, 
-        const std::string& content_type, 
-        const std::string& body
-        );
-    void handle_login(int client_socket);
-    string read_from_socket(int client_socket);
-
     boost::asio::io_context& io_context_;
     tcp::acceptor acceptor_;
 };
