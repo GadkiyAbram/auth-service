@@ -35,6 +35,12 @@ namespace HttpCodeMessages {
 namespace HttpCommon {
     extern const string INVALID_JSON;
     extern const string ROUTE_NOT_FOUND;
+    extern const string USER_NOT_FOUND;
+}
+
+namespace HttpDummy {
+    extern const string MESSAGE_WELCOME;
+    extern const string MESSAGE_ABOUT;
 }
 
 #endif

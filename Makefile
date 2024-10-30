@@ -129,6 +129,30 @@ cplusplus/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/build
 .PHONY : cplusplus/fast
 
+constants/entities/Entities.o: constants/entities/Entities.cpp.o
+.PHONY : constants/entities/Entities.o
+
+# target to build an object file
+constants/entities/Entities.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/entities/Entities.cpp.o
+.PHONY : constants/entities/Entities.cpp.o
+
+constants/entities/Entities.i: constants/entities/Entities.cpp.i
+.PHONY : constants/entities/Entities.i
+
+# target to preprocess a source file
+constants/entities/Entities.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/entities/Entities.cpp.i
+.PHONY : constants/entities/Entities.cpp.i
+
+constants/entities/Entities.s: constants/entities/Entities.cpp.s
+.PHONY : constants/entities/Entities.s
+
+# target to generate assembly for a file
+constants/entities/Entities.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/entities/Entities.cpp.s
+.PHONY : constants/entities/Entities.cpp.s
+
 constants/http/Http.o: constants/http/Http.cpp.o
 .PHONY : constants/http/Http.o
 
@@ -450,6 +474,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cplusplus"
+	@echo "... constants/entities/Entities.o"
+	@echo "... constants/entities/Entities.i"
+	@echo "... constants/entities/Entities.s"
 	@echo "... constants/http/Http.o"
 	@echo "... constants/http/Http.i"
 	@echo "... constants/http/Http.s"

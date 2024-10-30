@@ -1,4 +1,5 @@
 #include "UserRepository.h"
+#include "../../constants/http//Http.h"
 #include <iostream>
 
 UserRepository::UserRepository(const DBConnection& dbConnection) : dbConnection(dbConnection) {}
@@ -31,5 +32,5 @@ UserDTO UserRepository::getUser(const std::string &username) const {
 
     PQclear(result);
 
-    throw std::runtime_error("User not found");
+    throw std::runtime_error(HttpCommon::USER_NOT_FOUND);
 }

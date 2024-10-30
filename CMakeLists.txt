@@ -32,7 +32,9 @@ set(SOURCES
     services/user/UserRepository.h
     services/user/UserDTO.cpp
     services/user/UserRepository.cpp
-    server/IRequestHandler.h)
+    server/IRequestHandler.h
+    constants/entities/Entities.h
+    constants/entities/Entities.cpp)
 
 # Executable
 add_executable(cplusplus ${SOURCES})

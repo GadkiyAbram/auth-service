@@ -30,4 +30,10 @@ namespace HttpCodeMessages {
 namespace HttpCommon {
     const string INVALID_JSON = "Invalid JSON";
     const string ROUTE_NOT_FOUND = "Route not found";
+    const string USER_NOT_FOUND = "User not found";
+}
+
+namespace HttpDummy {
+    extern const string MESSAGE_WELCOME = "Welcome to the Home Page!!!";
+    extern const string MESSAGE_ABOUT = "This is a very Cool Gyrodata Application in being developed!!!";
 }

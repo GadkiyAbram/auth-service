@@ -6,21 +6,25 @@
 #include "../../services/user/UserDTO.h"
 #include "../../services/user/UserRepository.h"
 #include "../../constants/http/methods/Methods.h"
-#include "../../database/DBConnection.h"
 #include "../../constants/http/Http.h"
 #include "../../constants/routes/Routes.h"
+#include "../../constants/entities/Entities.h"
+#include "../../database/DBConnection.h"
 
 using json = nlohmann::json;
 
+namespace HttpMethods = Methods;
+namespace UserKeys = User;
+
 Router::Router() {
     get_routes_[Routes::DEFAULT] = [](const string& body) -> std::pair<std::string, std::string> {
-        string response = "Welcome to the Home Page!!!";
+        string response = HttpDummy::MESSAGE_WELCOME;
 
         return std::make_pair(HttpCodeMessages::OK, response);
     };
 
     get_routes_[Routes::ABOUT] = [](const string& body) -> std::pair<std::string, std::string> {
-        string response = "This is a very Cool Gyrodata Application in being developed!!!";
+        string response = HttpDummy::MESSAGE_ABOUT;
 
         return std::make_pair(HttpCodeMessages::OK, response);
     };
@@ -28,8 +32,8 @@ Router::Router() {
     post_routes_[Routes::LOGIN] = [](const string& body) -> std::pair<std::string, std::string> {
         try {
             json json_data = json::parse(body);
-            string username = json_data["username"];
-            string password = json_data["password"];
+            string username = json_data[UserKeys::USERNAME];
+            string password = json_data[UserKeys::PASSWORD];
 
             const DBConnection& dbConnection = DBConnection::getInstance();
 
@@ -41,7 +45,7 @@ Router::Router() {
 
             return std::make_pair(HttpCodeMessages::OK, string (response));
         } catch (json::parse_error& e) {
-            std::cout << "400 Bad Request" << std::endl;
+            std::cout << HttpCodeMessages::BAD_REQUEST << std::endl;
         }
 
         return std::make_pair(HttpCodeMessages::BAD_REQUEST, HttpCommon::INVALID_JSON);
