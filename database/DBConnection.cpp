@@ -58,6 +58,20 @@ PGresult* DBConnection::query(const string& query) const {
     return result;
 }
 
+bool DBConnection::insert(const string &query) const {
+    PGresult* result = PQexec(connection, query.c_str());
+
+    if (PQresultStatus(result) != PGRES_COMMAND_OK) {
+        std::cerr << "Insert failed: " << PQerrorMessage(connection) << std::endl;
+        PQclear(result);
+
+        return false;
+    }
+    PQclear(result);
+
+    return true;;
+}
+
 DBConfig DBConnection::getDBConfig() {
     const char* dbName = getenv("POSTGRES_DB");
     const char* user = getenv("POSTGRES_USER");

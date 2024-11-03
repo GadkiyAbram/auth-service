@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//Path to a library.
+BCRYPT_LIB:FILEPATH=/usr/local/lib/libbcrypt.a
+
+//Path to a library.
+BCRYPT_LIBRARY:FILEPATH=/usr/local/lib/libbcrypt.a
+
 //The directory containing a CMake configuration file for Boost.
 Boost_DIR:PATH=/usr/local/lib/cmake/Boost-1.81.0
 

@@ -3,6 +3,7 @@
 #include <iostream>
 #include <nlohmann/json.hpp>
 #include <sstream>
+#include "bcrypt/BCrypt.hpp"
 #include "../../services/user/UserDTO.h"
 #include "../../services/user/UserRepository.h"
 #include "../../constants/http/methods/Methods.h"
@@ -41,9 +42,32 @@ Router::Router() {
 
             UserDTO user = userRepository.getUser(username);
 
-            string response = "Username: " + user.getUsername() + " and password: " + user.getPassword();
+            string hashedPassword = BCrypt::generateHash("test");
+
+            string response = "Username: " + user.getUsername() + " and password: " + user.getPassword() + " and hashed: " + hashedPassword;
 
             return std::make_pair(HttpCodeMessages::OK, string (response));
+        } catch (json::parse_error& e) {
+            std::cout << HttpCodeMessages::BAD_REQUEST << std::endl;
+        }
+
+        return std::make_pair(HttpCodeMessages::BAD_REQUEST, HttpCommon::INVALID_JSON);
+    };
+
+    post_routes_[Routes::CREATE_USER] = [](const string& body) -> std::pair<std::string, std::string> {
+        json json_data = json::parse(body);
+        string username = json_data[UserKeys::USERNAME];
+
+        const DBConnection& dbConnection = DBConnection::getInstance();
+
+        UserRepository userRepository(dbConnection);
+
+        try {
+            std::string response = userRepository.createUser(username) ? "true" : "false";
+
+            std::cout << response << std::endl;
+
+            return std::make_pair(HttpCodeMessages::OK, response);
         } catch (json::parse_error& e) {
             std::cout << HttpCodeMessages::BAD_REQUEST << std::endl;
         }
