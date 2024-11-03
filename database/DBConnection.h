@@ -35,6 +35,8 @@ public:
     void execute(const string& query);
 
     PGresult* query(const string& query) const;
+    bool insert(const string& query) const;
+
     PGconn *connection;
 
     static DBConfig getDBConfig();

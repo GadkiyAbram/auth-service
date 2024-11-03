@@ -2,6 +2,7 @@
 
 namespace Routes {
     const string DEFAULT = "/";
-    const string LOGIN = "/login";
+    const string LOGIN = "/auth/login";
     const string ABOUT = "/about";
+    const string CREATE_USER = "/users/create";
 }

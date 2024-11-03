@@ -1,7 +1,3 @@
-//
-// Created by aleksandr on 21.07.2024.
-//
-
 #include "User.h"
 #include "iostream"
 

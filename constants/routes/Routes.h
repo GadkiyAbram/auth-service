@@ -9,6 +9,7 @@ namespace Routes {
     extern const string DEFAULT;
     extern const string LOGIN;
     extern const string ABOUT;
+    extern const string CREATE_USER;
 }
 
 #endif

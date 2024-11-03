@@ -10,11 +10,14 @@ class UserRepository {
 public:
     UserRepository(const DBConnection& dbConnection);
 
+    bool createUser(const std::string& username);
     bool userExists(const std::string& username) const;
     UserDTO getUser(const std::string& username) const;
 
 private:
     const DBConnection& dbConnection;
+    string generatePassword(int length);
+    string hashPassword(const std::string& password);
 };
 
 #endif

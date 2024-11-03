@@ -6,6 +6,8 @@ set(CMAKE_BUILD_TYPE Debug)
 
 find_package(PostgreSQL REQUIRED)
 find_package(Boost REQUIRED)
+find_library(BCRYPT_LIB bcrypt REQUIRED HINTS /usr/local/lib)
+
 include_directories(${PostgreSQL_INCLUDE_DIRS})
 include_directories(/usr/local/include/nlohmann)
 
@@ -46,4 +48,6 @@ target_link_libraries(
     ${Boost_LIBRARIES}
     pq
     pthread
+    ${BCRYPT_LIB}
+    /usr/local/lib
 )
