@@ -8,6 +8,7 @@ using namespace std;
 namespace User {
     extern const string USERNAME;
     extern const string PASSWORD;
+    extern const string TOKEN;
 }
 
 #endif

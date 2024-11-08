@@ -129,6 +129,30 @@ cplusplus/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/build
 .PHONY : cplusplus/fast
 
+constants/auth/Auth.o: constants/auth/Auth.cpp.o
+.PHONY : constants/auth/Auth.o
+
+# target to build an object file
+constants/auth/Auth.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/auth/Auth.cpp.o
+.PHONY : constants/auth/Auth.cpp.o
+
+constants/auth/Auth.i: constants/auth/Auth.cpp.i
+.PHONY : constants/auth/Auth.i
+
+# target to preprocess a source file
+constants/auth/Auth.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/auth/Auth.cpp.i
+.PHONY : constants/auth/Auth.cpp.i
+
+constants/auth/Auth.s: constants/auth/Auth.cpp.s
+.PHONY : constants/auth/Auth.s
+
+# target to generate assembly for a file
+constants/auth/Auth.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/auth/Auth.cpp.s
+.PHONY : constants/auth/Auth.cpp.s
+
 constants/entities/Entities.o: constants/entities/Entities.cpp.o
 .PHONY : constants/entities/Entities.o
 
@@ -152,6 +176,30 @@ constants/entities/Entities.s: constants/entities/Entities.cpp.s
 constants/entities/Entities.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/entities/Entities.cpp.s
 .PHONY : constants/entities/Entities.cpp.s
+
+constants/env/Env.o: constants/env/Env.cpp.o
+.PHONY : constants/env/Env.o
+
+# target to build an object file
+constants/env/Env.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/env/Env.cpp.o
+.PHONY : constants/env/Env.cpp.o
+
+constants/env/Env.i: constants/env/Env.cpp.i
+.PHONY : constants/env/Env.i
+
+# target to preprocess a source file
+constants/env/Env.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/env/Env.cpp.i
+.PHONY : constants/env/Env.cpp.i
+
+constants/env/Env.s: constants/env/Env.cpp.s
+.PHONY : constants/env/Env.s
+
+# target to generate assembly for a file
+constants/env/Env.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/env/Env.cpp.s
+.PHONY : constants/env/Env.cpp.s
 
 constants/http/Http.o: constants/http/Http.cpp.o
 .PHONY : constants/http/Http.o
@@ -297,29 +345,53 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-models/Auth/Auth.o: models/Auth/Auth.cpp.o
-.PHONY : models/Auth/Auth.o
+models/Auth/jwt/JWTAuth.o: models/Auth/jwt/JWTAuth.cpp.o
+.PHONY : models/Auth/jwt/JWTAuth.o
 
 # target to build an object file
-models/Auth/Auth.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/Auth.cpp.o
-.PHONY : models/Auth/Auth.cpp.o
+models/Auth/jwt/JWTAuth.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/jwt/JWTAuth.cpp.o
+.PHONY : models/Auth/jwt/JWTAuth.cpp.o
 
-models/Auth/Auth.i: models/Auth/Auth.cpp.i
-.PHONY : models/Auth/Auth.i
+models/Auth/jwt/JWTAuth.i: models/Auth/jwt/JWTAuth.cpp.i
+.PHONY : models/Auth/jwt/JWTAuth.i
 
 # target to preprocess a source file
-models/Auth/Auth.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/Auth.cpp.i
-.PHONY : models/Auth/Auth.cpp.i
+models/Auth/jwt/JWTAuth.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/jwt/JWTAuth.cpp.i
+.PHONY : models/Auth/jwt/JWTAuth.cpp.i
 
-models/Auth/Auth.s: models/Auth/Auth.cpp.s
-.PHONY : models/Auth/Auth.s
+models/Auth/jwt/JWTAuth.s: models/Auth/jwt/JWTAuth.cpp.s
+.PHONY : models/Auth/jwt/JWTAuth.s
 
 # target to generate assembly for a file
-models/Auth/Auth.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/Auth.cpp.s
-.PHONY : models/Auth/Auth.cpp.s
+models/Auth/jwt/JWTAuth.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/jwt/JWTAuth.cpp.s
+.PHONY : models/Auth/jwt/JWTAuth.cpp.s
+
+models/Auth/jwt/entity/JWTAuthEntity.o: models/Auth/jwt/entity/JWTAuthEntity.cpp.o
+.PHONY : models/Auth/jwt/entity/JWTAuthEntity.o
+
+# target to build an object file
+models/Auth/jwt/entity/JWTAuthEntity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/jwt/entity/JWTAuthEntity.cpp.o
+.PHONY : models/Auth/jwt/entity/JWTAuthEntity.cpp.o
+
+models/Auth/jwt/entity/JWTAuthEntity.i: models/Auth/jwt/entity/JWTAuthEntity.cpp.i
+.PHONY : models/Auth/jwt/entity/JWTAuthEntity.i
+
+# target to preprocess a source file
+models/Auth/jwt/entity/JWTAuthEntity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/jwt/entity/JWTAuthEntity.cpp.i
+.PHONY : models/Auth/jwt/entity/JWTAuthEntity.cpp.i
+
+models/Auth/jwt/entity/JWTAuthEntity.s: models/Auth/jwt/entity/JWTAuthEntity.cpp.s
+.PHONY : models/Auth/jwt/entity/JWTAuthEntity.s
+
+# target to generate assembly for a file
+models/Auth/jwt/entity/JWTAuthEntity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/jwt/entity/JWTAuthEntity.cpp.s
+.PHONY : models/Auth/jwt/entity/JWTAuthEntity.cpp.s
 
 models/User/User.o: models/User/User.cpp.o
 .PHONY : models/User/User.o
@@ -474,9 +546,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cplusplus"
+	@echo "... constants/auth/Auth.o"
+	@echo "... constants/auth/Auth.i"
+	@echo "... constants/auth/Auth.s"
 	@echo "... constants/entities/Entities.o"
 	@echo "... constants/entities/Entities.i"
 	@echo "... constants/entities/Entities.s"
+	@echo "... constants/env/Env.o"
+	@echo "... constants/env/Env.i"
+	@echo "... constants/env/Env.s"
 	@echo "... constants/http/Http.o"
 	@echo "... constants/http/Http.i"
 	@echo "... constants/http/Http.s"
@@ -495,9 +573,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... models/Auth/Auth.o"
-	@echo "... models/Auth/Auth.i"
-	@echo "... models/Auth/Auth.s"
+	@echo "... models/Auth/jwt/JWTAuth.o"
+	@echo "... models/Auth/jwt/JWTAuth.i"
+	@echo "... models/Auth/jwt/JWTAuth.s"
+	@echo "... models/Auth/jwt/entity/JWTAuthEntity.o"
+	@echo "... models/Auth/jwt/entity/JWTAuthEntity.i"
+	@echo "... models/Auth/jwt/entity/JWTAuthEntity.s"
 	@echo "... models/User/User.o"
 	@echo "... models/User/User.i"
 	@echo "... models/User/User.s"

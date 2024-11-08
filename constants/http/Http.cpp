@@ -31,6 +31,10 @@ namespace HttpCommon {
     const string INVALID_JSON = "Invalid JSON";
     const string ROUTE_NOT_FOUND = "Route not found";
     const string USER_NOT_FOUND = "User not found";
+    const string INVALID_AUTHTYPE_VALUE = "Invalid authType value: ";
+    const string INVALID_CREDENTIALS = "Invalid credentials";
+    const string INVALID_USERNAME_OR_PASSWORD = "Invalid username or password";
+    const string USER_ALREADY_EXISTS = "User already exists";
 }
 
 namespace HttpDummy {

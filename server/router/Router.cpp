@@ -10,9 +10,13 @@
 #include "../../constants/http/Http.h"
 #include "../../constants/routes/Routes.h"
 #include "../../constants/entities/Entities.h"
+#include "../../constants/auth/Auth.h"
+#include "../../constants/env/Env.h"
 #include "../../database/DBConnection.h"
+#include "../../models/Auth/jwt/JWTAuth.h"
 
 using json = nlohmann::json;
+using namespace std;
 
 namespace HttpMethods = Methods;
 namespace UserKeys = User;
@@ -31,24 +35,36 @@ Router::Router() {
     };
 
     post_routes_[Routes::LOGIN] = [](const string& body) -> std::pair<std::string, std::string> {
+        bool authenticated = false;
+
         try {
             json json_data = json::parse(body);
             string username = json_data[UserKeys::USERNAME];
             string password = json_data[UserKeys::PASSWORD];
+            std::string old_token =
+                    json_data.contains(UserKeys::PASSWORD) ? json_data[UserKeys::PASSWORD].get<std::string>() : "";
 
             const DBConnection& dbConnection = DBConnection::getInstance();
-
             UserRepository userRepository(dbConnection);
 
             UserDTO user = userRepository.getUser(username);
 
-            string hashedPassword = BCrypt::generateHash("test");
+            if (BCrypt::validatePassword(password, user.getPassword())) {
+                if (user.getAuthType() == AuthType::JWT) {
+                    std::string jwtSecret = std::getenv(EnvKeys::JWT_SECRET.c_str());
 
-            string response = "Username: " + user.getUsername() + " and password: " + user.getPassword() + " and hashed: " + hashedPassword;
+                    JWTAuth jwtAuth(jwtSecret);
+                    std::string newToken = jwtAuth.authenticate(old_token, username);
 
-            return std::make_pair(HttpCodeMessages::OK, string (response));
+                    return std::make_pair(HttpCodeMessages::OK, newToken);
+                }
+            } else {
+                return std::make_pair(HttpCodeMessages::NOT_AUTHORIZED, HttpCommon::INVALID_CREDENTIALS);
+            }
         } catch (json::parse_error& e) {
             std::cout << HttpCodeMessages::BAD_REQUEST << std::endl;
+
+            return std::make_pair(HttpCodeMessages::BAD_REQUEST, HttpCommon::INVALID_JSON);
         }
 
         return std::make_pair(HttpCodeMessages::BAD_REQUEST, HttpCommon::INVALID_JSON);
@@ -57,13 +73,14 @@ Router::Router() {
     post_routes_[Routes::CREATE_USER] = [](const string& body) -> std::pair<std::string, std::string> {
         json json_data = json::parse(body);
         string username = json_data[UserKeys::USERNAME];
+        string password = json_data[UserKeys::PASSWORD];
 
         const DBConnection& dbConnection = DBConnection::getInstance();
 
         UserRepository userRepository(dbConnection);
 
         try {
-            std::string response = userRepository.createUser(username) ? "true" : "false";
+            std::string response = userRepository.createUser(username, password) ? "true" : "false";
 
             std::cout << response << std::endl;
 
