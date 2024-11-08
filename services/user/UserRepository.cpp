@@ -1,5 +1,6 @@
 #include "UserRepository.h"
 #include "../../constants/http//Http.h"
+#include "../../constants/auth/Auth.h"
 #include <iostream>
 #include "bcrypt/BCrypt.hpp"
 #include <random>
@@ -7,12 +8,17 @@
 
 UserRepository::UserRepository(const DBConnection& dbConnection) : dbConnection(dbConnection) {}
 
-bool UserRepository::createUser(const std::string &username) {
-    if (userExists(username)) {
-        throw std::runtime_error("User already exists");
+bool UserRepository::createUser(
+        const std::string &username,
+        const std::string &password
+        ) {
+    if (this->userExists(username)) {
+        throw std::runtime_error(HttpCommon::USER_ALREADY_EXISTS);
     }
 
-    std::string hashedPassword = hashPassword(generatePassword(10));
+    std::string hashedPassword = !password.empty() ?
+            hashPassword(password) :
+            hashPassword(generatePassword(10));
 
     std::string query = "INSERT INTO users (username, password) VALUES ('" + username + "', '" + hashedPassword + "');";
 
@@ -46,13 +52,22 @@ bool UserRepository::userExists(const std::string &username) const {
 }
 
 UserDTO UserRepository::getUser(const std::string &username) const {
-    std::string query = "SELECT username, password FROM users WHERE username = '" + username + "';";
+    std::string query = "SELECT username, password, authType FROM users WHERE username = '" + username + "';";
     PGresult* result = dbConnection.query(query);
-    if(PQntuples(result) > 0) {
+    if (PQntuples(result) > 0) {
         std::string password = PQgetvalue(result,0, 1);
+
+        int authType = AuthType::JWT;
+
+        try {
+            authType = std::stoi(PQgetvalue(result,0, 2));
+        } catch (const std::invalid_argument& e) {
+            std::cerr << HttpCommon::INVALID_AUTHTYPE_VALUE << PQgetvalue(result, 0, 2) << std::endl;
+        }
+
         PQclear(result);
 
-        return UserDTO(username, password);
+        return UserDTO(username, password, authType);
     }
 
     PQclear(result);

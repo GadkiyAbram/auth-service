@@ -6,10 +6,31 @@ set(CMAKE_BUILD_TYPE Debug)
 
 find_package(PostgreSQL REQUIRED)
 find_package(Boost REQUIRED)
+find_package(OpenSSL REQUIRED)
+#find_package(laserpants_dotenv)
+
 find_library(BCRYPT_LIB bcrypt REQUIRED HINTS /usr/local/lib)
 
 include_directories(${PostgreSQL_INCLUDE_DIRS})
 include_directories(/usr/local/include/nlohmann)
+include_directories("/usr/local/include/laserpants/dotenv-0.9.3")
+
+set(HEADERS
+    models/User/User.h
+    models/Auth/Auth.h
+    constants/http/Http.h
+    constants/http/methods/Methods.h
+    constants/http/responseCodes/ResponseCodes.h
+    server/router/Router.h
+    constants/routes/Routes.h
+    services/user/UserDTO.h
+    services/user/UserRepository.h
+    server/IRequestHandler.h
+    constants/entities/Entities.h
+    models/Auth/jwt/JWTAuth.h
+    models/Auth/jwt/entity/JWTAuthEntity.h
+    constants/auth/Auth.h
+    )
 
 set(SOURCES
     main.cpp
@@ -17,29 +38,20 @@ set(SOURCES
     topics/pointers/Pointer.cpp
     server/Server.cpp
     models/User/User.cpp
-    models/User/User.h
-    models/Auth/Auth.cpp
-    models/Auth/Auth.h
-    constants/http/Http.h
     constants/http/Http.cpp
-    constants/http/methods/Methods.h
     constants/http/methods/Methods.cpp
-    constants/http/responseCodes/ResponseCodes.h
     constants/http/responseCodes/ResponseCodes.cpp
-    server/router/Router.h
     server/router/Router.cpp
-    constants/routes/Routes.h
     constants/routes/Routes.cpp
-    services/user/UserDTO.h
-    services/user/UserRepository.h
     services/user/UserDTO.cpp
     services/user/UserRepository.cpp
-    server/IRequestHandler.h
-    constants/entities/Entities.h
-    constants/entities/Entities.cpp)
+    constants/entities/Entities.cpp
+    models/Auth/jwt/JWTAuth.cpp
+    models/Auth/jwt/entity/JWTAuthEntity.cpp
+    constants/auth/Auth.cpp constants/env/Env.cpp constants/env/Env.h)
 
 # Executable
-add_executable(cplusplus ${SOURCES})
+add_executable(cplusplus ${SOURCES} ${HEADERS})
 
 # Link libraries
 target_link_libraries(
@@ -50,4 +62,6 @@ target_link_libraries(
     pthread
     ${BCRYPT_LIB}
     /usr/local/lib
+    OpenSSL::SSL
+    OpenSSL::Crypto
 )

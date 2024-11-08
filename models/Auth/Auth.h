@@ -1,23 +1,15 @@
-//
-// Created by aleksandr on 21.07.2024.
-//
-
-#ifndef CPLUSPLUSLAZY_AUTH_H
-#define CPLUSPLUSLAZY_AUTH_H
+#ifndef AUTH_H
+#define AUTH_H
 
 #include <string>
 
 using namespace std;
 
-
 class Auth {
 public:
-    Auth();
+    virtual std::string authenticate(const std::string& token, const std::string &username) const = 0;
 
-
-private:
-    string token;
+    virtual ~Auth() = default;
 };
 
-
-#endif //CPLUSPLUSLAZY_AUTH_H
+#endif

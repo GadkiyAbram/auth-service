@@ -20,6 +20,7 @@ public:
     string getUsername() const;
     string getCreatedAt() const;
     string getUpdatedAt() const;
+    int getAuthType() const;
 
     void setName(const string &name);
     void setSurname(const string &surname);
@@ -34,6 +35,7 @@ private:
     string username;
     string createdAt;
     string updatedAt;
+    int authType;
 };
 
 

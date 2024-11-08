@@ -1,5 +1,5 @@
-#ifndef HTTP_H
-#define HTTP_H
+#ifndef HTTP_CONSTANTS_H
+#define HTTP_CONSTANTS_H
 
 #include <string>
 
@@ -36,6 +36,10 @@ namespace HttpCommon {
     extern const string INVALID_JSON;
     extern const string ROUTE_NOT_FOUND;
     extern const string USER_NOT_FOUND;
+    extern const string INVALID_AUTHTYPE_VALUE;
+    extern const string INVALID_CREDENTIALS;
+    extern const string INVALID_USERNAME_OR_PASSWORD;
+    extern const string USER_ALREADY_EXISTS;
 }
 
 namespace HttpDummy {
