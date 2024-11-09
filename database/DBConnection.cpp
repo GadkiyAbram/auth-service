@@ -67,6 +67,7 @@ bool DBConnection::insert(const string &query) const {
 
         return false;
     }
+
     PQclear(result);
 
     return true;;

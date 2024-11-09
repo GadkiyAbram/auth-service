@@ -1,0 +1,8 @@
+ALTER TABLE jwt_auth ALTER COLUMN userid TYPE integer;
+
+ALTER TABLE jwt_auth
+ADD CONSTRAINT fk_user_id
+FOREIGN KEY (userid)
+REFERENCES users (id)
+ON DELETE CASCADE
+ON UPDATE CASCADE;

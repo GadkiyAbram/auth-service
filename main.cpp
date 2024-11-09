@@ -1,4 +1,5 @@
 #include "server/Server.h"
+#include "constants/env/Env.h"
 #include <boost/asio/ip/tcp.hpp>
 #include <dotenv.h>
 
@@ -11,7 +12,7 @@ int main() {
         dotenv::init();
 
         boost::asio::io_context io_context;
-        const int port = 8080;
+        const int port = std::stoi(std::getenv(EnvKeys::SERVER_INTERNAL_PORT.c_str()));
 
         Server server(io_context, port);
         server.launch();

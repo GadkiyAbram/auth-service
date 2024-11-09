@@ -50,8 +50,6 @@ void Server::handle_request(tcp::socket& socket) {
         string request_line;
         getline(is, request_line);
 
-        cout << "Raw request line: " << request_line << std::endl;
-
         // Extract the request line, headers, and body
         string method;
         string path;
@@ -76,8 +74,11 @@ void Server::handle_request(tcp::socket& socket) {
 
         std::pair<string, string> response = router.route(method, path, body);
 
-        string http_response = "HTTP/1.1 " + response.first + "\r\nContent-Type: text/plain\r\nContent-Length: " +
-                std::to_string(response.second.size()) + "\r\n\r\n" + response.second;
+        string http_response = "HTTP/1.1 " + response.first +
+                "\r\nContent-Type: text/plain\r\nContent-Length: " +
+                std::to_string(response.second.size()) +
+                "\r\n\r\n" +
+                response.second;
 
         boost::asio::write(socket, boost::asio::buffer(http_response));
     } catch (std::exception& e) {
