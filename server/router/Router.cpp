@@ -42,7 +42,7 @@ Router::Router() {
             string username = json_data[UserKeys::USERNAME];
             string password = json_data[UserKeys::PASSWORD];
             std::string old_token =
-                    json_data.contains(UserKeys::PASSWORD) ? json_data[UserKeys::PASSWORD].get<std::string>() : "";
+                    json_data.contains(UserKeys::TOKEN) ? json_data[UserKeys::TOKEN].get<std::string>() : "";
 
             const DBConnection& dbConnection = DBConnection::getInstance();
             UserRepository userRepository(dbConnection);
