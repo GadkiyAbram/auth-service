@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(CplusPlusLazy)
+project(auth-service)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_BUILD_TYPE Debug)
@@ -51,11 +51,11 @@ set(SOURCES
     constants/auth/Auth.cpp constants/env/Env.cpp constants/env/Env.h)
 
 # Executable
-add_executable(cplusplus ${SOURCES} ${HEADERS})
+add_executable(auth-service ${SOURCES} ${HEADERS})
 
 # Link libraries
 target_link_libraries(
-    cplusplus
+    auth-service
     ${PostgreSQL_LIBRARIES}
     ${Boost_LIBRARIES}
     pq
