@@ -1,4 +1,4 @@
-# Install script for directory: /usr/src/cplusplus
+# Install script for directory: /usr/src/auth-service
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/usr/src/cplusplus/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/usr/src/auth-service/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

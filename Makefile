@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /usr/src/cplusplus
+CMAKE_SOURCE_DIR = /usr/src/auth-service
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /usr/src/cplusplus
+CMAKE_BINARY_DIR = /usr/src/auth-service
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/src/cplusplus/CMakeFiles /usr/src/cplusplus//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /usr/src/auth-service/CMakeFiles /usr/src/auth-service//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/src/cplusplus/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /usr/src/auth-service/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cplusplus
+# Target rules for targets named auth-service
 
 # Build rule for target.
-cplusplus: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cplusplus
-.PHONY : cplusplus
+auth-service: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 auth-service
+.PHONY : auth-service
 
 # fast build rule for target.
-cplusplus/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/build
-.PHONY : cplusplus/fast
+auth-service/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/build
+.PHONY : auth-service/fast
 
 constants/auth/Auth.o: constants/auth/Auth.cpp.o
 .PHONY : constants/auth/Auth.o
 
 # target to build an object file
 constants/auth/Auth.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/auth/Auth.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/auth/Auth.cpp.o
 .PHONY : constants/auth/Auth.cpp.o
 
 constants/auth/Auth.i: constants/auth/Auth.cpp.i
@@ -142,7 +142,7 @@ constants/auth/Auth.i: constants/auth/Auth.cpp.i
 
 # target to preprocess a source file
 constants/auth/Auth.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/auth/Auth.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/auth/Auth.cpp.i
 .PHONY : constants/auth/Auth.cpp.i
 
 constants/auth/Auth.s: constants/auth/Auth.cpp.s
@@ -150,7 +150,7 @@ constants/auth/Auth.s: constants/auth/Auth.cpp.s
 
 # target to generate assembly for a file
 constants/auth/Auth.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/auth/Auth.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/auth/Auth.cpp.s
 .PHONY : constants/auth/Auth.cpp.s
 
 constants/entities/Entities.o: constants/entities/Entities.cpp.o
@@ -158,7 +158,7 @@ constants/entities/Entities.o: constants/entities/Entities.cpp.o
 
 # target to build an object file
 constants/entities/Entities.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/entities/Entities.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/entities/Entities.cpp.o
 .PHONY : constants/entities/Entities.cpp.o
 
 constants/entities/Entities.i: constants/entities/Entities.cpp.i
@@ -166,7 +166,7 @@ constants/entities/Entities.i: constants/entities/Entities.cpp.i
 
 # target to preprocess a source file
 constants/entities/Entities.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/entities/Entities.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/entities/Entities.cpp.i
 .PHONY : constants/entities/Entities.cpp.i
 
 constants/entities/Entities.s: constants/entities/Entities.cpp.s
@@ -174,7 +174,7 @@ constants/entities/Entities.s: constants/entities/Entities.cpp.s
 
 # target to generate assembly for a file
 constants/entities/Entities.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/entities/Entities.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/entities/Entities.cpp.s
 .PHONY : constants/entities/Entities.cpp.s
 
 constants/env/Env.o: constants/env/Env.cpp.o
@@ -182,7 +182,7 @@ constants/env/Env.o: constants/env/Env.cpp.o
 
 # target to build an object file
 constants/env/Env.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/env/Env.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/env/Env.cpp.o
 .PHONY : constants/env/Env.cpp.o
 
 constants/env/Env.i: constants/env/Env.cpp.i
@@ -190,7 +190,7 @@ constants/env/Env.i: constants/env/Env.cpp.i
 
 # target to preprocess a source file
 constants/env/Env.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/env/Env.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/env/Env.cpp.i
 .PHONY : constants/env/Env.cpp.i
 
 constants/env/Env.s: constants/env/Env.cpp.s
@@ -198,7 +198,7 @@ constants/env/Env.s: constants/env/Env.cpp.s
 
 # target to generate assembly for a file
 constants/env/Env.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/env/Env.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/env/Env.cpp.s
 .PHONY : constants/env/Env.cpp.s
 
 constants/http/Http.o: constants/http/Http.cpp.o
@@ -206,7 +206,7 @@ constants/http/Http.o: constants/http/Http.cpp.o
 
 # target to build an object file
 constants/http/Http.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/Http.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/http/Http.cpp.o
 .PHONY : constants/http/Http.cpp.o
 
 constants/http/Http.i: constants/http/Http.cpp.i
@@ -214,7 +214,7 @@ constants/http/Http.i: constants/http/Http.cpp.i
 
 # target to preprocess a source file
 constants/http/Http.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/Http.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/http/Http.cpp.i
 .PHONY : constants/http/Http.cpp.i
 
 constants/http/Http.s: constants/http/Http.cpp.s
@@ -222,7 +222,7 @@ constants/http/Http.s: constants/http/Http.cpp.s
 
 # target to generate assembly for a file
 constants/http/Http.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/Http.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/http/Http.cpp.s
 .PHONY : constants/http/Http.cpp.s
 
 constants/http/methods/Methods.o: constants/http/methods/Methods.cpp.o
@@ -230,7 +230,7 @@ constants/http/methods/Methods.o: constants/http/methods/Methods.cpp.o
 
 # target to build an object file
 constants/http/methods/Methods.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/methods/Methods.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/http/methods/Methods.cpp.o
 .PHONY : constants/http/methods/Methods.cpp.o
 
 constants/http/methods/Methods.i: constants/http/methods/Methods.cpp.i
@@ -238,7 +238,7 @@ constants/http/methods/Methods.i: constants/http/methods/Methods.cpp.i
 
 # target to preprocess a source file
 constants/http/methods/Methods.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/methods/Methods.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/http/methods/Methods.cpp.i
 .PHONY : constants/http/methods/Methods.cpp.i
 
 constants/http/methods/Methods.s: constants/http/methods/Methods.cpp.s
@@ -246,7 +246,7 @@ constants/http/methods/Methods.s: constants/http/methods/Methods.cpp.s
 
 # target to generate assembly for a file
 constants/http/methods/Methods.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/methods/Methods.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/http/methods/Methods.cpp.s
 .PHONY : constants/http/methods/Methods.cpp.s
 
 constants/http/responseCodes/ResponseCodes.o: constants/http/responseCodes/ResponseCodes.cpp.o
@@ -254,7 +254,7 @@ constants/http/responseCodes/ResponseCodes.o: constants/http/responseCodes/Respo
 
 # target to build an object file
 constants/http/responseCodes/ResponseCodes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/responseCodes/ResponseCodes.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/http/responseCodes/ResponseCodes.cpp.o
 .PHONY : constants/http/responseCodes/ResponseCodes.cpp.o
 
 constants/http/responseCodes/ResponseCodes.i: constants/http/responseCodes/ResponseCodes.cpp.i
@@ -262,7 +262,7 @@ constants/http/responseCodes/ResponseCodes.i: constants/http/responseCodes/Respo
 
 # target to preprocess a source file
 constants/http/responseCodes/ResponseCodes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/responseCodes/ResponseCodes.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/http/responseCodes/ResponseCodes.cpp.i
 .PHONY : constants/http/responseCodes/ResponseCodes.cpp.i
 
 constants/http/responseCodes/ResponseCodes.s: constants/http/responseCodes/ResponseCodes.cpp.s
@@ -270,7 +270,7 @@ constants/http/responseCodes/ResponseCodes.s: constants/http/responseCodes/Respo
 
 # target to generate assembly for a file
 constants/http/responseCodes/ResponseCodes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/http/responseCodes/ResponseCodes.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/http/responseCodes/ResponseCodes.cpp.s
 .PHONY : constants/http/responseCodes/ResponseCodes.cpp.s
 
 constants/routes/Routes.o: constants/routes/Routes.cpp.o
@@ -278,7 +278,7 @@ constants/routes/Routes.o: constants/routes/Routes.cpp.o
 
 # target to build an object file
 constants/routes/Routes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/routes/Routes.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/routes/Routes.cpp.o
 .PHONY : constants/routes/Routes.cpp.o
 
 constants/routes/Routes.i: constants/routes/Routes.cpp.i
@@ -286,7 +286,7 @@ constants/routes/Routes.i: constants/routes/Routes.cpp.i
 
 # target to preprocess a source file
 constants/routes/Routes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/routes/Routes.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/routes/Routes.cpp.i
 .PHONY : constants/routes/Routes.cpp.i
 
 constants/routes/Routes.s: constants/routes/Routes.cpp.s
@@ -294,7 +294,7 @@ constants/routes/Routes.s: constants/routes/Routes.cpp.s
 
 # target to generate assembly for a file
 constants/routes/Routes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/constants/routes/Routes.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/routes/Routes.cpp.s
 .PHONY : constants/routes/Routes.cpp.s
 
 database/DBConnection.o: database/DBConnection.cpp.o
@@ -302,7 +302,7 @@ database/DBConnection.o: database/DBConnection.cpp.o
 
 # target to build an object file
 database/DBConnection.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/database/DBConnection.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/database/DBConnection.cpp.o
 .PHONY : database/DBConnection.cpp.o
 
 database/DBConnection.i: database/DBConnection.cpp.i
@@ -310,7 +310,7 @@ database/DBConnection.i: database/DBConnection.cpp.i
 
 # target to preprocess a source file
 database/DBConnection.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/database/DBConnection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/database/DBConnection.cpp.i
 .PHONY : database/DBConnection.cpp.i
 
 database/DBConnection.s: database/DBConnection.cpp.s
@@ -318,7 +318,7 @@ database/DBConnection.s: database/DBConnection.cpp.s
 
 # target to generate assembly for a file
 database/DBConnection.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/database/DBConnection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/database/DBConnection.cpp.s
 .PHONY : database/DBConnection.cpp.s
 
 main.o: main.cpp.o
@@ -326,7 +326,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -334,7 +334,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -342,7 +342,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 models/Auth/jwt/JWTAuth.o: models/Auth/jwt/JWTAuth.cpp.o
@@ -350,7 +350,7 @@ models/Auth/jwt/JWTAuth.o: models/Auth/jwt/JWTAuth.cpp.o
 
 # target to build an object file
 models/Auth/jwt/JWTAuth.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/jwt/JWTAuth.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/models/Auth/jwt/JWTAuth.cpp.o
 .PHONY : models/Auth/jwt/JWTAuth.cpp.o
 
 models/Auth/jwt/JWTAuth.i: models/Auth/jwt/JWTAuth.cpp.i
@@ -358,7 +358,7 @@ models/Auth/jwt/JWTAuth.i: models/Auth/jwt/JWTAuth.cpp.i
 
 # target to preprocess a source file
 models/Auth/jwt/JWTAuth.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/jwt/JWTAuth.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/models/Auth/jwt/JWTAuth.cpp.i
 .PHONY : models/Auth/jwt/JWTAuth.cpp.i
 
 models/Auth/jwt/JWTAuth.s: models/Auth/jwt/JWTAuth.cpp.s
@@ -366,7 +366,7 @@ models/Auth/jwt/JWTAuth.s: models/Auth/jwt/JWTAuth.cpp.s
 
 # target to generate assembly for a file
 models/Auth/jwt/JWTAuth.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/jwt/JWTAuth.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/models/Auth/jwt/JWTAuth.cpp.s
 .PHONY : models/Auth/jwt/JWTAuth.cpp.s
 
 models/Auth/jwt/entity/JWTAuthEntity.o: models/Auth/jwt/entity/JWTAuthEntity.cpp.o
@@ -374,7 +374,7 @@ models/Auth/jwt/entity/JWTAuthEntity.o: models/Auth/jwt/entity/JWTAuthEntity.cpp
 
 # target to build an object file
 models/Auth/jwt/entity/JWTAuthEntity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/jwt/entity/JWTAuthEntity.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/models/Auth/jwt/entity/JWTAuthEntity.cpp.o
 .PHONY : models/Auth/jwt/entity/JWTAuthEntity.cpp.o
 
 models/Auth/jwt/entity/JWTAuthEntity.i: models/Auth/jwt/entity/JWTAuthEntity.cpp.i
@@ -382,7 +382,7 @@ models/Auth/jwt/entity/JWTAuthEntity.i: models/Auth/jwt/entity/JWTAuthEntity.cpp
 
 # target to preprocess a source file
 models/Auth/jwt/entity/JWTAuthEntity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/jwt/entity/JWTAuthEntity.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/models/Auth/jwt/entity/JWTAuthEntity.cpp.i
 .PHONY : models/Auth/jwt/entity/JWTAuthEntity.cpp.i
 
 models/Auth/jwt/entity/JWTAuthEntity.s: models/Auth/jwt/entity/JWTAuthEntity.cpp.s
@@ -390,7 +390,7 @@ models/Auth/jwt/entity/JWTAuthEntity.s: models/Auth/jwt/entity/JWTAuthEntity.cpp
 
 # target to generate assembly for a file
 models/Auth/jwt/entity/JWTAuthEntity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/Auth/jwt/entity/JWTAuthEntity.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/models/Auth/jwt/entity/JWTAuthEntity.cpp.s
 .PHONY : models/Auth/jwt/entity/JWTAuthEntity.cpp.s
 
 models/User/User.o: models/User/User.cpp.o
@@ -398,7 +398,7 @@ models/User/User.o: models/User/User.cpp.o
 
 # target to build an object file
 models/User/User.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/User/User.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/models/User/User.cpp.o
 .PHONY : models/User/User.cpp.o
 
 models/User/User.i: models/User/User.cpp.i
@@ -406,7 +406,7 @@ models/User/User.i: models/User/User.cpp.i
 
 # target to preprocess a source file
 models/User/User.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/User/User.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/models/User/User.cpp.i
 .PHONY : models/User/User.cpp.i
 
 models/User/User.s: models/User/User.cpp.s
@@ -414,7 +414,7 @@ models/User/User.s: models/User/User.cpp.s
 
 # target to generate assembly for a file
 models/User/User.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/models/User/User.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/models/User/User.cpp.s
 .PHONY : models/User/User.cpp.s
 
 server/Server.o: server/Server.cpp.o
@@ -422,7 +422,7 @@ server/Server.o: server/Server.cpp.o
 
 # target to build an object file
 server/Server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/server/Server.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/server/Server.cpp.o
 .PHONY : server/Server.cpp.o
 
 server/Server.i: server/Server.cpp.i
@@ -430,7 +430,7 @@ server/Server.i: server/Server.cpp.i
 
 # target to preprocess a source file
 server/Server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/server/Server.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/server/Server.cpp.i
 .PHONY : server/Server.cpp.i
 
 server/Server.s: server/Server.cpp.s
@@ -438,7 +438,7 @@ server/Server.s: server/Server.cpp.s
 
 # target to generate assembly for a file
 server/Server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/server/Server.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/server/Server.cpp.s
 .PHONY : server/Server.cpp.s
 
 server/router/Router.o: server/router/Router.cpp.o
@@ -446,7 +446,7 @@ server/router/Router.o: server/router/Router.cpp.o
 
 # target to build an object file
 server/router/Router.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/server/router/Router.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/server/router/Router.cpp.o
 .PHONY : server/router/Router.cpp.o
 
 server/router/Router.i: server/router/Router.cpp.i
@@ -454,7 +454,7 @@ server/router/Router.i: server/router/Router.cpp.i
 
 # target to preprocess a source file
 server/router/Router.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/server/router/Router.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/server/router/Router.cpp.i
 .PHONY : server/router/Router.cpp.i
 
 server/router/Router.s: server/router/Router.cpp.s
@@ -462,7 +462,7 @@ server/router/Router.s: server/router/Router.cpp.s
 
 # target to generate assembly for a file
 server/router/Router.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/server/router/Router.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/server/router/Router.cpp.s
 .PHONY : server/router/Router.cpp.s
 
 services/user/UserDTO.o: services/user/UserDTO.cpp.o
@@ -470,7 +470,7 @@ services/user/UserDTO.o: services/user/UserDTO.cpp.o
 
 # target to build an object file
 services/user/UserDTO.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/services/user/UserDTO.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/services/user/UserDTO.cpp.o
 .PHONY : services/user/UserDTO.cpp.o
 
 services/user/UserDTO.i: services/user/UserDTO.cpp.i
@@ -478,7 +478,7 @@ services/user/UserDTO.i: services/user/UserDTO.cpp.i
 
 # target to preprocess a source file
 services/user/UserDTO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/services/user/UserDTO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/services/user/UserDTO.cpp.i
 .PHONY : services/user/UserDTO.cpp.i
 
 services/user/UserDTO.s: services/user/UserDTO.cpp.s
@@ -486,7 +486,7 @@ services/user/UserDTO.s: services/user/UserDTO.cpp.s
 
 # target to generate assembly for a file
 services/user/UserDTO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/services/user/UserDTO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/services/user/UserDTO.cpp.s
 .PHONY : services/user/UserDTO.cpp.s
 
 services/user/UserRepository.o: services/user/UserRepository.cpp.o
@@ -494,7 +494,7 @@ services/user/UserRepository.o: services/user/UserRepository.cpp.o
 
 # target to build an object file
 services/user/UserRepository.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/services/user/UserRepository.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/services/user/UserRepository.cpp.o
 .PHONY : services/user/UserRepository.cpp.o
 
 services/user/UserRepository.i: services/user/UserRepository.cpp.i
@@ -502,7 +502,7 @@ services/user/UserRepository.i: services/user/UserRepository.cpp.i
 
 # target to preprocess a source file
 services/user/UserRepository.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/services/user/UserRepository.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/services/user/UserRepository.cpp.i
 .PHONY : services/user/UserRepository.cpp.i
 
 services/user/UserRepository.s: services/user/UserRepository.cpp.s
@@ -510,7 +510,7 @@ services/user/UserRepository.s: services/user/UserRepository.cpp.s
 
 # target to generate assembly for a file
 services/user/UserRepository.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/services/user/UserRepository.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/services/user/UserRepository.cpp.s
 .PHONY : services/user/UserRepository.cpp.s
 
 topics/pointers/Pointer.o: topics/pointers/Pointer.cpp.o
@@ -518,7 +518,7 @@ topics/pointers/Pointer.o: topics/pointers/Pointer.cpp.o
 
 # target to build an object file
 topics/pointers/Pointer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/topics/pointers/Pointer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/topics/pointers/Pointer.cpp.o
 .PHONY : topics/pointers/Pointer.cpp.o
 
 topics/pointers/Pointer.i: topics/pointers/Pointer.cpp.i
@@ -526,7 +526,7 @@ topics/pointers/Pointer.i: topics/pointers/Pointer.cpp.i
 
 # target to preprocess a source file
 topics/pointers/Pointer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/topics/pointers/Pointer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/topics/pointers/Pointer.cpp.i
 .PHONY : topics/pointers/Pointer.cpp.i
 
 topics/pointers/Pointer.s: topics/pointers/Pointer.cpp.s
@@ -534,7 +534,7 @@ topics/pointers/Pointer.s: topics/pointers/Pointer.cpp.s
 
 # target to generate assembly for a file
 topics/pointers/Pointer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/topics/pointers/Pointer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/topics/pointers/Pointer.cpp.s
 .PHONY : topics/pointers/Pointer.cpp.s
 
 # Help Target
@@ -545,7 +545,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cplusplus"
+	@echo "... auth-service"
 	@echo "... constants/auth/Auth.o"
 	@echo "... constants/auth/Auth.i"
 	@echo "... constants/auth/Auth.s"

@@ -1,9 +1,5 @@
-//
-// Created by aleksandr on 21.07.2024.
-//
-
-#ifndef CPLUSPLUSLAZY_USER_H
-#define CPLUSPLUSLAZY_USER_H
+#ifndef USER_MODEL_H
+#define USER_MODEL_H
 
 #include <string>
 #include <postgresql/libpq-fe.h>
@@ -39,4 +35,4 @@ private:
 };
 
 
-#endif //CPLUSPLUSLAZY_USER_H
+#endif
