@@ -2,6 +2,9 @@
 #include <jwt-cpp/jwt.h>
 #include <chrono>
 #include <iostream>
+#include "../../../constants/entities/Entities.h"
+
+namespace UserKeys = User;
 
 JWTAuth::JWTAuth(const std::string &secretKey) : secretKey(secretKey) {}
 
@@ -18,11 +21,9 @@ std::string JWTAuth::authenticate(const std::string &token, const std::string &u
 
             verifier.verify(decodedToken);
 
-            if (!isTokenExpired(decodedToken)) {
-                return token;
-            } else {
-                return this->generateToken(username);
-            }
+            return isTokenExpired(decodedToken) ?
+                this->generateToken(username) :
+                token;
         } catch (const std::exception&e) {
             std::cerr << "Token validation error: " << e.what() << std::endl;
 
@@ -41,7 +42,7 @@ bool JWTAuth::isTokenExpired(const jwt::decoded_jwt<jwt::traits::kazuho_picojson
 std::string JWTAuth::generateToken(const std::string &username) const {
     auto token = jwt::create()
             .set_issuer("auth0")
-            .set_payload_claim("username", jwt::claim(username))
+            .set_payload_claim(UserKeys::USERNAME, jwt::claim(username))
             .set_expires_at(std::chrono::system_clock::now() + std::chrono::hours(1))
             .sign(jwt::algorithm::hs256{secretKey});
 
