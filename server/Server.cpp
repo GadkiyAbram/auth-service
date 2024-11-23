@@ -31,18 +31,15 @@ Server::Server(
 
 void Server::launch() {
     while (true) {
-        // Accept a new connection
         tcp::socket socket(io_context_);
         acceptor_.accept(socket);
 
-        // Handle the client in a separate function
         handle_request(socket);
     }
 }
 
 void Server::handle_request(tcp::socket& socket) {
     try {
-        // Read the request headers
         boost::asio::streambuf buffer;
         boost::asio::read_until(socket, buffer, "\r\n\r\n");  // Read until end of headers
 
@@ -50,7 +47,6 @@ void Server::handle_request(tcp::socket& socket) {
         string request_line;
         getline(is, request_line);
 
-        // Extract the request line, headers, and body
         string method;
         string path;
         string version;
