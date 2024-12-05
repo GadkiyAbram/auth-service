@@ -16,8 +16,9 @@ public:
 private:
     std::string secretKey;
 
-    bool isTokenExpired(const jwt::decoded_jwt<jwt::traits::kazuho_picojson>& decodedToken) const;
-    std::string generateToken(const std::string& username) const;
+    bool isTokenExpired(const jwt::decoded_jwt<jwt::traits::kazuho_picojson> &decodedToken) const;
+    std::string generateToken(const std::string &username) const;
+    bool verify(const std::string &token) const;
 };
 
 #endif

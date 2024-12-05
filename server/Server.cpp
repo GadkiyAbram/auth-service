@@ -41,7 +41,7 @@ void Server::launch() {
 void Server::handle_request(tcp::socket& socket) {
     try {
         boost::asio::streambuf buffer;
-        boost::asio::read_until(socket, buffer, "\r\n\r\n");  // Read until end of headers
+        boost::asio::read_until(socket, buffer, "\r\n\r\n");
 
         istream is(&buffer);
         string request_line;

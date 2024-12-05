@@ -10,6 +10,7 @@ namespace Routes {
     extern const string LOGIN;
     extern const string ABOUT;
     extern const string CREATE_USER;
+    extern const string VALIDATE;
 }
 
 #endif

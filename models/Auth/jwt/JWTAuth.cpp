@@ -11,24 +11,25 @@ JWTAuth::JWTAuth(const std::string &secretKey) : secretKey(secretKey) {}
 std::string JWTAuth::authenticate(const std::string &token, const std::string &username) const {
     if (token.empty()) {
         return this->generateToken(username);
-    } else {
-        try {
-            auto decodedToken = jwt::decode(token);
+    }
 
-            auto verifier = jwt::verify()
-                    .allow_algorithm(jwt::algorithm::hs256{secretKey})
-                    .with_issuer("auth0");
+    try {
+        auto decodedToken = jwt::decode(token);
 
-            verifier.verify(decodedToken);
+        // @todo verifier and verifier.verify(decodedToken) looks unnecessary here
+        auto verifier = jwt::verify()
+                .allow_algorithm(jwt::algorithm::hs256{secretKey})
+                .with_issuer("auth0");
 
-            return isTokenExpired(decodedToken) ?
-                this->generateToken(username) :
-                token;
-        } catch (const std::exception&e) {
-            std::cerr << "Token validation error: " << e.what() << std::endl;
+        verifier.verify(decodedToken);
 
-            return this->generateToken(username);
-        }
+        return isTokenExpired(decodedToken) ?
+               this->generateToken(username) :
+               token;
+    } catch (const std::exception&e) {
+        std::cerr << "Token validation error: " << e.what() << std::endl;
+
+        return this->generateToken(username);
     }
 }
 
@@ -47,4 +48,22 @@ std::string JWTAuth::generateToken(const std::string &username) const {
             .sign(jwt::algorithm::hs256{secretKey});
 
     return token;
+}
+
+bool JWTAuth::verify(const std::string &token) const {
+    try {
+        auto decodedToken = jwt::decode(token);
+
+        auto verifier = jwt::verify()
+                .allow_algorithm(jwt::algorithm::hs256{secretKey})
+                .with_issuer("auth0");
+
+        verifier.verify(decodedToken);
+
+        return true;
+    } catch (const std::exception&e) {
+        return false;
+    }
+
+    return false;
 }
