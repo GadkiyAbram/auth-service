@@ -61,6 +61,7 @@ Router::Router() {
             }
         } catch (json::parse_error& e) {
             std::cout << HttpCodeMessages::BAD_REQUEST << std::endl;
+            std::cout << e.what() << std::endl;
 
             return std::make_pair(HttpCodeMessages::BAD_REQUEST, HttpCommon::INVALID_JSON);
         }
