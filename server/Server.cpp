@@ -11,6 +11,7 @@
 #include "../database/DBConnection.h"
 #include <postgresql/libpq-fe.h>
 #include "../constants/http/HttpConstants.hpp"
+#include "../constants/http/Http.h"
 #include "../constants/http/methods/Methods.h"
 #include <iostream>
 #include <nlohmann/json.hpp>
@@ -70,11 +71,18 @@ void Server::handle_request(tcp::socket& socket) {
 
         std::pair<string, string> response = router.route(method, path, body);
 
+        json jsonResponse;
+
+        jsonResponse["status"] = response.first == HttpCodeMessages::OK ? "success" : "error" ;
+        jsonResponse["data"] = response.second;
+
+        string json_str = jsonResponse.dump();
+
         string http_response = "HTTP/1.1 " + response.first +
-                "\r\nContent-Type: text/plain\r\nContent-Length: " +
-                std::to_string(response.second.size()) +
+                "\r\nContent-Type: application/json\r\nContent-Length: " +
+                std::to_string(json_str.size()) +
                 "\r\n\r\n" +
-                response.second;
+                json_str;
 
         boost::asio::write(socket, boost::asio::buffer(http_response));
     } catch (std::exception& e) {

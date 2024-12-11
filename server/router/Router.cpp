@@ -35,6 +35,7 @@ Router::Router() {
     };
 
     post_routes_[Routes::LOGIN] = [](const string& body) -> std::pair<std::string, std::string> {
+        cout << "Body: " << body << endl;
         try {
             json json_data = json::parse(body);
             string username = json_data[UserKeys::USERNAME];
