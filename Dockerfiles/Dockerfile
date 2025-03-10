@@ -10,9 +10,10 @@ RUN apt-get update && \
     wget \
     gnupg \
     cmake \
-    libssl-dev && \
-    wget -qO- "https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.gz" | tar -xz -C /usr/local && \
-        cd /usr/local/boost_1_81_0 && \
+    libssl-dev
+
+RUN wget -qO- "https://sourceforge.net/projects/boost/files/boost/1.87.0/boost_1_87_0.tar.gz/download" | tar -xz -C /usr/local && \
+        cd /usr/local/boost_1_87_0 && \
         ./bootstrap.sh && \
         ./b2 install && \
         apt-get clean && \
