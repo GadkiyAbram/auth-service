@@ -22,20 +22,23 @@ namespace HttpMethods = Methods;
 namespace UserKeys = User;
 
 Router::Router() {
-    get_routes_[Routes::DEFAULT] = [](const string& body) -> std::pair<std::string, std::string> {
-        string response = HttpDummy::MESSAGE_WELCOME;
-
-        return std::make_pair(HttpCodeMessages::OK, response);
+    get_routes_[Routes::DEFAULT] = [](const string &body) -> json {
+        return {
+            {"status", HttpCodeMessages::OK},
+            {"data", {{"message", HttpDummy::MESSAGE_WELCOME}}}
+        };
     };
 
-    get_routes_[Routes::ABOUT] = [](const string& body) -> std::pair<std::string, std::string> {
+    get_routes_[Routes::ABOUT] = [](const string &body) -> json {
         string response = HttpDummy::MESSAGE_ABOUT;
 
-        return std::make_pair(HttpCodeMessages::OK, response);
+        return {
+            {"status", HttpCodeMessages::OK},
+            {"data", {{"message", HttpDummy::MESSAGE_ABOUT}}}
+        };
     };
 
-    post_routes_[Routes::LOGIN] = [](const string& body) -> std::pair<std::string, std::string> {
-        cout << "Body: " << body << endl;
+    post_routes_[Routes::LOGIN] = [](const string &body) -> json {
         try {
             json json_data = json::parse(body);
             string username = json_data[UserKeys::USERNAME];
@@ -43,7 +46,7 @@ Router::Router() {
             std::string old_token =
                     json_data.contains(UserKeys::TOKEN) ? json_data[UserKeys::TOKEN].get<std::string>() : "";
 
-            const DBConnection& dbConnection = DBConnection::getInstance();
+            const DBConnection &dbConnection = DBConnection::getInstance();
             UserRepository userRepository(dbConnection);
 
             UserDTO user = userRepository.getUser(username);
@@ -55,27 +58,39 @@ Router::Router() {
                     JWTAuth jwtAuth(jwtSecret);
                     std::string newToken = jwtAuth.authenticate(old_token, username);
 
-                    return std::make_pair(HttpCodeMessages::OK, newToken);
+                    return {
+                        {"status", HttpCodeMessages::OK},
+                        {"data", {{"token", newToken}}}
+                    };
                 }
             } else {
-                return std::make_pair(HttpCodeMessages::NOT_AUTHORIZED, HttpCommon::INVALID_CREDENTIALS);
+                return {
+                    {"status", HttpCodeMessages::NOT_AUTHORIZED},
+                    {"data", {{"message", HttpCommon::INVALID_CREDENTIALS}}}
+                };
             }
-        } catch (json::parse_error& e) {
+        } catch (json::parse_error &e) {
             std::cout << HttpCodeMessages::BAD_REQUEST << std::endl;
             std::cout << e.what() << std::endl;
 
-            return std::make_pair(HttpCodeMessages::BAD_REQUEST, HttpCommon::INVALID_JSON);
+            return {
+                {"status", HttpCodeMessages::BAD_REQUEST},
+                {"data", {{"message", HttpCommon::INVALID_JSON}}}
+            };
         }
 
-        return std::make_pair(HttpCodeMessages::BAD_REQUEST, HttpCommon::INVALID_JSON);
+        return {
+            {"status", HttpCodeMessages::BAD_REQUEST},
+            {"data", {{"message", HttpCommon::INVALID_JSON}}}
+        };
     };
 
-    post_routes_[Routes::CREATE_USER] = [](const string& body) -> std::pair<std::string, std::string> {
+    post_routes_[Routes::CREATE_USER] = [](const string &body) -> json {
         json json_data = json::parse(body);
         string username = json_data[UserKeys::USERNAME];
         string password = json_data[UserKeys::PASSWORD];
 
-        const DBConnection& dbConnection = DBConnection::getInstance();
+        const DBConnection &dbConnection = DBConnection::getInstance();
 
         UserRepository userRepository(dbConnection);
 
@@ -84,25 +99,34 @@ Router::Router() {
 
             std::cout << response << std::endl;
 
-            return std::make_pair(HttpCodeMessages::OK, response);
-        } catch (json::parse_error& e) {
+            return {
+                {"status", HttpCodeMessages::OK},
+                {"data", {{"created", response}}}
+            };
+        } catch (json::parse_error &e) {
             std::cout << HttpCodeMessages::BAD_REQUEST << std::endl;
         }
 
-        return std::make_pair(HttpCodeMessages::BAD_REQUEST, HttpCommon::INVALID_JSON);
+        return {
+            {"status", HttpCodeMessages::BAD_REQUEST},
+            {"data", {"message", HttpCommon::INVALID_JSON}}
+        };
     };
 }
 
-std::pair<string, string> Router::route(
-        const string& method,
-        const string& path,
-        const string& body
-        ) {
+json Router::route(
+        const string &method,
+        const string &path,
+        const string &body
+) {
     if (method == Methods::GET && get_routes_.count(path)) {
         return get_routes_[path](body);
     } else if (method == Methods::POST && post_routes_.count(path)) {
         return post_routes_[path](body);
     } else {
-        return std::make_pair(HttpCodeMessages::NOT_FOUND, HttpCommon::ROUTE_NOT_FOUND);
+        return {
+            {"status", HttpCodeMessages::NOT_FOUND},
+            {"data", {{"message", HttpCommon::ROUTE_NOT_FOUND}}}
+        };
     }
 }

@@ -7,6 +7,7 @@ using namespace std;
 
 namespace Routes {
     extern const string DEFAULT;
+    extern const string DEFAULT_TEST;
     extern const string LOGIN;
     extern const string ABOUT;
     extern const string CREATE_USER;
