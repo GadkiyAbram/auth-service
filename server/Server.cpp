@@ -68,21 +68,18 @@ void Server::handle_request(tcp::socket& socket) {
         body = body_stream.str();
 
         Router router;
+        json response = router.route(method, path, body);
 
-        std::pair<string, string> response = router.route(method, path, body);
+        string json_str = response["data"].dump();
 
-        json jsonResponse;
-
-        jsonResponse["status"] = response.first == HttpCodeMessages::OK ? "success" : "error" ;
-        jsonResponse["data"] = response.second;
-
-        string json_str = jsonResponse.dump();
-
-        string http_response = "HTTP/1.1 " + response.first +
-                "\r\nContent-Type: application/json\r\nContent-Length: " +
-                std::to_string(json_str.size()) +
-                "\r\n\r\n" +
-                json_str;
+        std::string http_response = "";
+        http_response
+            .append("HTTP/1.1 ")
+            .append(response["status"])
+            .append("\r\nContent-Type: application/json\r\nContent-Length: ")
+            .append(std::to_string(json_str.size()))
+            .append("\r\n\r\n")
+            .append(json_str);
 
         boost::asio::write(socket, boost::asio::buffer(http_response));
     } catch (std::exception& e) {
