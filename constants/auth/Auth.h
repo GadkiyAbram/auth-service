@@ -3,10 +3,12 @@
 
 #include <string>
 
-using namespace std;
-
 namespace AuthType {
     extern const int JWT;
+}
+
+namespace AuthResponseKeys {
+    extern const std::string TOKEN;
 }
 
 #endif

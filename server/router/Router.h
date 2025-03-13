@@ -11,22 +11,26 @@
 
 using boost::asio::ip::tcp;
 using json = nlohmann::json;
-using namespace std;
 
 class Router {
 public:
-    using Handler = std::function<void(tcp::socket&, const string&)>;
+    using Handler = std::function<void(tcp::socket&, const std::string&)>;
 
     Router();
 
     json route(
-            const string& method,
-            const string& path,
-            const string& body
+            const std::string& method,
+            const std::string& path,
+            const std::string& body
             );
 private:
-    std::map<string, std::function<json(const string&)>> get_routes_;
-    std::map<string, std::function<json(const string&)>> post_routes_;
+    std::map<std::string, std::function<json(const std::string&)>> get_routes_;
+    std::map<std::string, std::function<json(const std::string&)>> post_routes_;
+
+    json formatResponse(
+        const std::string& status,
+        const json& result
+        );
 };
 
 #endif
