@@ -153,6 +153,30 @@ constants/auth/Auth.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/auth/Auth.cpp.s
 .PHONY : constants/auth/Auth.cpp.s
 
+constants/common/Common.o: constants/common/Common.cpp.o
+.PHONY : constants/common/Common.o
+
+# target to build an object file
+constants/common/Common.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/common/Common.cpp.o
+.PHONY : constants/common/Common.cpp.o
+
+constants/common/Common.i: constants/common/Common.cpp.i
+.PHONY : constants/common/Common.i
+
+# target to preprocess a source file
+constants/common/Common.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/common/Common.cpp.i
+.PHONY : constants/common/Common.cpp.i
+
+constants/common/Common.s: constants/common/Common.cpp.s
+.PHONY : constants/common/Common.s
+
+# target to generate assembly for a file
+constants/common/Common.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/constants/common/Common.cpp.s
+.PHONY : constants/common/Common.cpp.s
+
 constants/entities/Entities.o: constants/entities/Entities.cpp.o
 .PHONY : constants/entities/Entities.o
 
@@ -549,6 +573,9 @@ help:
 	@echo "... constants/auth/Auth.o"
 	@echo "... constants/auth/Auth.i"
 	@echo "... constants/auth/Auth.s"
+	@echo "... constants/common/Common.o"
+	@echo "... constants/common/Common.i"
+	@echo "... constants/common/Common.s"
 	@echo "... constants/entities/Entities.o"
 	@echo "... constants/entities/Entities.i"
 	@echo "... constants/entities/Entities.s"

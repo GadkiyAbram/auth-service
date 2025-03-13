@@ -30,6 +30,8 @@ set(HEADERS
     models/Auth/jwt/JWTAuth.h
     models/Auth/jwt/entity/JWTAuthEntity.h
     constants/auth/Auth.h
+    constants/env/Env.h
+    constants/common/Common.h
     )
 
 set(SOURCES
@@ -48,7 +50,10 @@ set(SOURCES
     constants/entities/Entities.cpp
     models/Auth/jwt/JWTAuth.cpp
     models/Auth/jwt/entity/JWTAuthEntity.cpp
-    constants/auth/Auth.cpp constants/env/Env.cpp constants/env/Env.h)
+    constants/auth/Auth.cpp
+    constants/env/Env.cpp
+    constants/common/Common.cpp
+    )
 
 # Executable
 add_executable(auth-service ${SOURCES} ${HEADERS})

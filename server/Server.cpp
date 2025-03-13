@@ -13,6 +13,7 @@
 #include "../constants/http/HttpConstants.hpp"
 #include "../constants/http/Http.h"
 #include "../constants/http/methods/Methods.h"
+#include "../constants/common/Common.h"
 #include <iostream>
 #include <nlohmann/json.hpp>
 #include <boost/asio.hpp>
@@ -70,12 +71,12 @@ void Server::handle_request(tcp::socket& socket) {
         Router router;
         json response = router.route(method, path, body);
 
-        string json_str = response["data"].dump();
+        string json_str = response[Common::DATA].dump();
 
         std::string http_response = "";
         http_response
             .append("HTTP/1.1 ")
-            .append(response["status"])
+            .append(response[Common::STATUS])
             .append("\r\nContent-Type: application/json\r\nContent-Length: ")
             .append(std::to_string(json_str.size()))
             .append("\r\n\r\n")
