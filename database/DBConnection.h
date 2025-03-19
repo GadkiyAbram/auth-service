@@ -4,6 +4,7 @@
 #include <postgresql/libpq-fe.h>
 #include <string>
 #include <sstream>
+#include <vector>
 
 using namespace std;
 
@@ -32,7 +33,7 @@ public:
 
     ~DBConnection();
 
-    void execute(const string& query);
+    PGresult* execute(const string &query, const std::vector<std::string> params) const;
 
     PGresult* query(const string& query) const;
     bool insert(const string& query) const;
