@@ -32,7 +32,7 @@ set(HEADERS
     constants/auth/Auth.h
     constants/env/Env.h
     constants/common/Common.h
-    )
+    database/QueryBuilder/Insert/Insert.cpp database/QueryBuilder/Insert/Insert.h)
 
 set(SOURCES
     main.cpp
@@ -53,7 +53,12 @@ set(SOURCES
     constants/auth/Auth.cpp
     constants/env/Env.cpp
     constants/common/Common.cpp
-    )
+    database/QueryBuilder/Select/Select.cpp
+    database/QueryBuilder/Select/Select.h
+    database/QueryBuilder/QueryBase/QueryBase.h
+    database/QueryBuilder/Query.cpp
+    database/QueryBuilder/Query.h
+    constants/db/Query/Query.h database/QueryBuilder/Insert/Insert.cpp database/QueryBuilder/Insert/Insert.h)
 
 # Executable
 add_executable(auth-service ${SOURCES} ${HEADERS})

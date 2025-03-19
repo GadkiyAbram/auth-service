@@ -58,6 +58,27 @@ PGresult* DBConnection::query(const string& query) const {
     return result;
 }
 
+PGresult* DBConnection::execute(const string &query, const std::vector<std::string> params) const {
+    std::vector<const char*> paramValues(params.size());
+    for (size_t i = 0; i < params.size(); ++i) {
+        paramValues[i] = params[i].c_str();
+    }
+
+    PGresult* result = PQexecParams(
+        connection, query.c_str(), params.size(), nullptr,
+        paramValues.data(), nullptr, nullptr, 0
+    );
+
+    if (PQresultStatus(result) != PGRES_TUPLES_OK && PQresultStatus(result) != PGRES_COMMAND_OK) {
+        std::cerr << "Query execution failed: " << PQerrorMessage(connection) << std::endl;
+        PQclear(result);
+
+        throw std::runtime_error("Query execution failed");
+    }
+
+    return result;
+}
+
 bool DBConnection::insert(const string &query) const {
     PGresult* result = PQexec(connection, query.c_str());
 

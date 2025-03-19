@@ -345,6 +345,78 @@ database/DBConnection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/database/DBConnection.cpp.s
 .PHONY : database/DBConnection.cpp.s
 
+database/QueryBuilder/Insert/Insert.o: database/QueryBuilder/Insert/Insert.cpp.o
+.PHONY : database/QueryBuilder/Insert/Insert.o
+
+# target to build an object file
+database/QueryBuilder/Insert/Insert.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/database/QueryBuilder/Insert/Insert.cpp.o
+.PHONY : database/QueryBuilder/Insert/Insert.cpp.o
+
+database/QueryBuilder/Insert/Insert.i: database/QueryBuilder/Insert/Insert.cpp.i
+.PHONY : database/QueryBuilder/Insert/Insert.i
+
+# target to preprocess a source file
+database/QueryBuilder/Insert/Insert.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/database/QueryBuilder/Insert/Insert.cpp.i
+.PHONY : database/QueryBuilder/Insert/Insert.cpp.i
+
+database/QueryBuilder/Insert/Insert.s: database/QueryBuilder/Insert/Insert.cpp.s
+.PHONY : database/QueryBuilder/Insert/Insert.s
+
+# target to generate assembly for a file
+database/QueryBuilder/Insert/Insert.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/database/QueryBuilder/Insert/Insert.cpp.s
+.PHONY : database/QueryBuilder/Insert/Insert.cpp.s
+
+database/QueryBuilder/Query.o: database/QueryBuilder/Query.cpp.o
+.PHONY : database/QueryBuilder/Query.o
+
+# target to build an object file
+database/QueryBuilder/Query.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/database/QueryBuilder/Query.cpp.o
+.PHONY : database/QueryBuilder/Query.cpp.o
+
+database/QueryBuilder/Query.i: database/QueryBuilder/Query.cpp.i
+.PHONY : database/QueryBuilder/Query.i
+
+# target to preprocess a source file
+database/QueryBuilder/Query.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/database/QueryBuilder/Query.cpp.i
+.PHONY : database/QueryBuilder/Query.cpp.i
+
+database/QueryBuilder/Query.s: database/QueryBuilder/Query.cpp.s
+.PHONY : database/QueryBuilder/Query.s
+
+# target to generate assembly for a file
+database/QueryBuilder/Query.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/database/QueryBuilder/Query.cpp.s
+.PHONY : database/QueryBuilder/Query.cpp.s
+
+database/QueryBuilder/Select/Select.o: database/QueryBuilder/Select/Select.cpp.o
+.PHONY : database/QueryBuilder/Select/Select.o
+
+# target to build an object file
+database/QueryBuilder/Select/Select.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/database/QueryBuilder/Select/Select.cpp.o
+.PHONY : database/QueryBuilder/Select/Select.cpp.o
+
+database/QueryBuilder/Select/Select.i: database/QueryBuilder/Select/Select.cpp.i
+.PHONY : database/QueryBuilder/Select/Select.i
+
+# target to preprocess a source file
+database/QueryBuilder/Select/Select.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/database/QueryBuilder/Select/Select.cpp.i
+.PHONY : database/QueryBuilder/Select/Select.cpp.i
+
+database/QueryBuilder/Select/Select.s: database/QueryBuilder/Select/Select.cpp.s
+.PHONY : database/QueryBuilder/Select/Select.s
+
+# target to generate assembly for a file
+database/QueryBuilder/Select/Select.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auth-service.dir/build.make CMakeFiles/auth-service.dir/database/QueryBuilder/Select/Select.cpp.s
+.PHONY : database/QueryBuilder/Select/Select.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -597,6 +669,15 @@ help:
 	@echo "... database/DBConnection.o"
 	@echo "... database/DBConnection.i"
 	@echo "... database/DBConnection.s"
+	@echo "... database/QueryBuilder/Insert/Insert.o"
+	@echo "... database/QueryBuilder/Insert/Insert.i"
+	@echo "... database/QueryBuilder/Insert/Insert.s"
+	@echo "... database/QueryBuilder/Query.o"
+	@echo "... database/QueryBuilder/Query.i"
+	@echo "... database/QueryBuilder/Query.s"
+	@echo "... database/QueryBuilder/Select/Select.o"
+	@echo "... database/QueryBuilder/Select/Select.i"
+	@echo "... database/QueryBuilder/Select/Select.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
