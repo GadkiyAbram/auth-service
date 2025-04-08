@@ -19,11 +19,11 @@ private:
 
 public:
     Insert();
-    Insert& into(const std::string &table);
-    Insert& values(
-        std::vector<std::string> columns,
-        std::vector<std::string> values
+    Insert& into(
+        const std::string &table,
+        std::vector<std::string> columns
         );
+    Insert& values(std::vector<std::string> values);
     std::pair<std::string, std::vector<std::string>> build();
 };
 

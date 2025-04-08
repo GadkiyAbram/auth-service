@@ -18,6 +18,7 @@
 #include <nlohmann/json.hpp>
 #include <boost/asio.hpp>
 #include "./router/Router.h"
+#include "../constants/auth/Auth.h"
 
 using namespace std;
 using boost::asio::ip::tcp;
@@ -71,19 +72,39 @@ void Server::handle_request(tcp::socket& socket) {
         Router router;
         json response = router.route(method, path, body);
 
-        string json_str = response[Common::DATA].dump();
-
-        std::string http_response = "";
-        http_response
-            .append("HTTP/1.1 ")
-            .append(response[Common::STATUS])
-            .append("\r\nContent-Type: application/json\r\nContent-Length: ")
-            .append(std::to_string(json_str.size()))
-            .append("\r\n\r\n")
-            .append(json_str);
+        std::string http_response = this->format_response(response);
 
         boost::asio::write(socket, boost::asio::buffer(http_response));
     } catch (std::exception& e) {
         std::cerr << "Exception: " << e.what() << std::endl;
     }
+}
+
+std::string Server::format_response(json &response) {
+    std::string http_response = "";
+
+    http_response
+        .append("HTTP/1.1 ")
+        .append(response[Common::STATUS]);
+
+    if (response[Common::DATA].contains(AuthResponseKeys::TOKEN)) {
+        std::string token = response[Common::DATA][AuthResponseKeys::TOKEN];
+        http_response
+            .append("\r\nSet-Cookie: token=")
+            .append("Bearer ")
+            .append(token)
+            .append("; HttpOnly; Secure; SameSite=Strict");
+
+        response[Common::DATA][AuthResponseKeys::TOKEN] = true;
+    }
+
+    std::string json_str = response[Common::DATA].dump();
+
+    http_response
+        .append("\r\nContent-Type: application/json\r\nContent-Length: ")
+        .append(std::to_string(json_str.size()))
+        .append("\r\n\r\n")
+        .append(json_str);
+
+    return http_response;
 }

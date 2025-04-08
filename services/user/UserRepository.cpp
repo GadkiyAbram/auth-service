@@ -22,8 +22,8 @@ bool UserRepository::createUser(
             hashPassword(generatePassword(10));
 
     auto query = Query::insert()
-        .into("users")
-        .values({"username", "password"}, {username, hashedPassword})
+        .into("users", {"username", "password"})
+        .values({username, hashedPassword})
         .build();
 
     try {
@@ -92,7 +92,7 @@ UserDTO UserRepository::getUser(const std::string &username) const {
     throw std::runtime_error(HttpCommon::USER_NOT_FOUND);
 }
 
-string UserRepository::generatePassword(int length) {
+std::string UserRepository::generatePassword(int length) {
     const std::string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
     std::default_random_engine rng(std::random_device{}());
@@ -107,6 +107,6 @@ string UserRepository::generatePassword(int length) {
     return password.str();
 }
 
-string UserRepository::hashPassword(const std::string& password) {
+std::string UserRepository::hashPassword(const std::string& password) {
     return BCrypt::generateHash(password);
 }

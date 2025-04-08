@@ -5,9 +5,11 @@
 #include <boost/asio.hpp>
 #include <map>
 #include "IRequestHandler.h"
+#include <nlohmann/json.hpp>
 
 using namespace std;
 using boost::asio::ip::tcp;
+using json = nlohmann::json;
 
 class Server : public IRequestHandler {
 public:
@@ -16,6 +18,7 @@ public:
     void launch();
 
     void handle_request(tcp::socket& socket) override;
+    std::string format_response(json &response);
 
 private:
     int server_socket;

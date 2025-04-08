@@ -16,8 +16,8 @@ public:
 
 private:
     const DBConnection& dbConnection;
-    string generatePassword(int length);
-    string hashPassword(const std::string& password);
+    std::string generatePassword(int length);
+    std::string hashPassword(const std::string& password);
 };
 
 #endif

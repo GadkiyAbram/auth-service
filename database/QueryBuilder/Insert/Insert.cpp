@@ -4,6 +4,24 @@ Insert::Insert() {
     this->query << "INSERT INTO ";
 }
 
+Insert& Insert::into(
+    const std::string &table,
+    std::vector <std::string> columns
+    ) {
+    this->table = table;
+    this->setColumns(columns);
+
+    return *this;
+}
+
+Insert& Insert::values(
+    std::vector <std::string> values
+    ) {
+    this->setValues(values);
+
+    return *this;
+}
+
 Insert& Insert::setColumns(const std::vector<std::string> &columns) {
     this->columns = columns;
 
@@ -12,22 +30,6 @@ Insert& Insert::setColumns(const std::vector<std::string> &columns) {
 
 Insert& Insert::setValues(const std::vector<std::string> &values) {
     this->params = values;
-
-    return *this;
-}
-
-Insert& Insert::into(const std::string &table) {
-    this->table = table;
-
-    return *this;
-}
-
-Insert& Insert::values(
-    std::vector <std::string> columns,
-    std::vector <std::string> values
-    ) {
-    this->setColumns(columns);
-    this->setValues(values);
 
     return *this;
 }
